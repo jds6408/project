@@ -1,0 +1,235 @@
+.sub_menu_wrap {
+    width: 1200px;
+    margin: 100px auto 0px;
+    position: relative;font-family: 'Nanum Gothic', sans-serif;
+}
+
+.sub_menu_wrap .sub_menu {
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    overflow: hidden;
+}
+
+.sub_menu_wrap .sub_menu .sub_menu_list {
+    width: 80px;
+    float: left;
+}
+
+.content {font-family: 'Nanum Gothic', sans-serif;
+}
+.content h2 {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 70px;
+    color: #eaeaea;font-family: 'Caveat', cursive;
+    line-height: 1.5em;
+}
+.content .content_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/***************************************************************인재상*********************************************************/
+.content .content_wrap .introduce_recruit_txt{
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 70px;
+    color: #eaeaea;font-family: 'Caveat', cursive;
+}
+.content .right_people {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+/***************************************************************채용정보*********************************************************/
+.content .recruit_information
+,.content .job_application{
+    display: block;
+    padding-top: 25px;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+.content .re_info{
+    display: block;
+    overflow: hidden;
+    margin-top: 35px;
+    padding-left: 30px;
+
+}
+.content .re_info li{
+    margin-bottom:35px;
+    padding-top: 20px;
+    position: relative;
+    bottom: -500px;
+    transition: all 1s;
+    
+}
+.content .re_info li:first-of-type{
+    transition: all 1s;
+}
+.content .re_info li:nth-of-type(2){
+    transition-delay: .5s;
+}
+.content .re_info li:last-of-type{
+    transition-delay: 1s;
+}
+.content .re_info li strong{
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 2em;
+    display: block;
+}
+.content .re_info li p{
+    padding-left: 30px;
+    font-size: 18px;
+}
+.content .re_info .re_info_step{
+    position: relative;
+}
+.content .re_info .re_info_step span{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    color: #fff;
+    line-height: 35px;
+    border-radius: 50%;
+    opacity: .5;
+    text-align: center;
+    z-index: 2;
+    transition: .3s;
+}
+
+.content .re_info li:hover strong{
+    color: #a8191f;
+}
+.content .re_info li:hover span{
+    background-color: #a8191f;
+    opacity: 1;
+}
+.content .re_info li:hover span:after{
+    background-color: #a8191f;
+    opacity: 1;
+}
+
+.content .re_info .re_info_step span:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    width: 580px;
+    height: 1.5px;
+    opacity: .5;
+    top: 50%;
+    margin: -1px 0 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.content .right_txt {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+/***************************************************************입사지원*********************************************************/
+.content .application_step{
+    overflow: hidden;
+    display: block;
+}
+.content .application_step li{
+    width: 25%;
+    padding-left: 30px;
+    position: relative;
+    float: left;
+    opacity: .6;
+}
+.content .application_step li:hover{
+    opacity: 1;
+}
+.content .application_step li:hover .re_step{
+    top: 20px;
+    transition-duration: 0.3s;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.content .application_step li .n_01:before,
+.content .application_step li .n_02:before,
+.content .application_step li .n_03:before,
+.content .application_step li .n_04:before{
+    content: '';
+    display: block;
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background: url(../images/recruit/recProc_spr.png);
+}
+.content .application_step li .n_01:before{
+    background-position: 0px 0px;
+}
+.content .application_step li .n_02:before{
+    background-position: -62px 0px;
+}
+.content .application_step li .n_03:before{
+    background-position: -186px 0px;
+}
+.content .application_step li .n_04:before{
+    background-position: -248px 0px;
+}
+.content .application_step li .num{
+    font-size: 13px;
+    color: #333;
+}
+.content .application_step li:hover .num:after{
+    width: 140px;
+} 
+.content .application_step li .num:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    left: 31px;
+    top: 5px;
+    transition: .5s;
+}
+
+.content .application_step li .txt{
+    font-size: 1.1em;
+    color: #333;
+    margin: 11px 0 0;
+}
+.content .application_step li span{
+    display: block;
+    line-height: 1;
+    position: relative;
+    font-weight: 500;
+}
+/***************************************************************입사지원 네모박스*********************************************************/
+
+.content .re_step{
+    width: 90%;
+    height: 150px;
+    background-color: #f2f4f8;
+    float: left;
+    position: relative;
+    top: 50px;
+    left: -30px;
+    transition-duration: 0.3s;
+}
+.content .re_step dd{
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 5px;
+}
+.content .notice_red{
+    font-size: 10px;
+    padding: 20px;
+    color: #a8191f;
+}
+

@@ -1,0 +1,170 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>recruit</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/recruit.css">
+    <link rel="stylesheet" href="common/css/sub1_company.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="../common/js/fullnav.js"></script>
+    <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+
+    <div id="wrap">
+
+        <!--헤더 삽입 영역-->
+        <? include "../common/sub_header.html" ?>
+        <!--헤더 삽입 영역-->
+
+        <section class="content">
+            <div class="company_wrap">
+                <h2>COMPANY</h2>
+            </div>
+            <div class="btn_wrap">
+                <h2 class="hidden">컨텐츠 이동 버튼</h2>
+                <ul class="company_btn_wrap">
+                    <a href="about_dorothy.html"><li class="btn">About</li></a>
+                    <a href="recruit.html"><li class="btn active">Recruit</li></a>
+                    <a href="map.html"><li class="btn">Map</li></a>
+
+                </ul>
+            </div>
+
+            <div class="sub_menu_wrap">
+                <ul class="sub_menu">
+                    <li class="sub_menu_list"><a href="../index.html"><i class="fas fa-home"></i> home &gt;</a></li>
+                    <li class="sub_menu_list"><a href="#">company &gt;</a></li>
+                    <li class="sub_menu_list"><a href="recruit.html">recruit</a></li>
+                </ul>
+            </div>
+
+
+            <div class="content_wrap">
+                <h3 class="introduce_recruit_txt">
+                    Recruit
+                </h3>
+                <h4 class="right_people">인재상</h4>
+                <p class="right_txt">
+                    도로시컴퍼니에서는 음악을 사랑하고 즐기며 함께 만들어나갈 인재를 기다립니다. <br />
+                    기본에 충실하며, 상대방의 입장에서 배려할 줄 아는 인간적인 예의를 갖추기 위해 노력하는 사람.
+                    <br />
+                    개인보다는 팀을 주시하며, 자신의 업무를 조직의 목적과 관련지어 생각할 수 있는 사람이라면 문을 두드려 주세요.
+                </p>
+                <h4 class="recruit_information">채용정보</h4>
+                <ul class="re_info">
+                    <li>
+                        <div class="re_info_step">
+                            <span> # </span>
+                        </div>
+                        <p>
+                            <strong>음반사업팀,</strong>
+                            컴퍼니 전체 음악 및 내부 콘텐츠
+                            기획/제작 지원, 마케팅, 대언론 홍보
+                        </p>
+                    </li>
+                    <li>
+                        <div class="re_info_step">
+                            <span> # </span>
+                        </div>
+                        <p>
+                            <strong>매니지먼트,</strong>
+                            아티스트 수행, 현장 진행</p>
+                    </li>
+                    <li>
+                        <div class="re_info_step">
+                            <span> # </span>
+                        </div>
+                        <p>
+                            <strong>신인개발팀,</strong>
+                            신인발굴 오디션 기획/제휴 및 진행,
+                            교육 프로그램 기획 교육 일정 관리 및 진행
+                    </li>
+                </ul>
+
+                <h4 class="job_application">입사지원</h4>
+                <ul class="application_step">
+
+                    <li>
+                        <span class="n_01"></span>
+                        <span class="num">
+                            01
+                        </span>
+                        <span class="txt">지원서 접수</span>
+
+                        <dl class="re_step">
+                            <dd>도로시컴퍼니 입사지원서 양식 작성</dd>
+                            <dd>이메일 접수 - recruit@dorothycp.com</dd>
+                        </dl>
+
+
+                    </li>
+
+                    <li>
+                        <span class="n_02"></span>
+                        <span class="num">
+                            02
+                        </span>
+                        <span class="txt">2차 실무진 면접</span>
+
+                        <dl class="re_step">
+                            <dd>응시분야 담당 팀장</dd>
+                            <dd>실무지식 / 기술 및 보유역량 검증</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span class="n_03"></span>
+                        <span class="num">
+                            03
+                        </span>
+                        <span class="txt">3차 최종면접</span>
+                        <dl class="re_step">
+                            <dd>대표이사 면접</dd>
+                            <dd>종합관점의 자질 검증</dd>
+                        </dl>
+                    </li>
+                    <li>
+
+                        <span class="n_04"></span>
+                        <span class="num">
+                            04
+                        </span>
+                        <span class="txt">최종 합격</span>
+                        <dl class="re_step">
+                            <dd>최종 합격자에 한해 개별 통지</dd>
+                        </dl>
+                    </li>
+                </ul>
+
+
+                <p class="notice_red"> * 채용관련 접수 및 문의는 이메일로만 받습니다. 전형별 합격자는 개별통지합니다.</p>
+            </div>
+        </section>
+        <!--메인 컨텐츠-->
+        <!--하단 삽입 영역-->
+        <? include "../common/sub_footer.html"?>
+        <!--하단 삽입 영역-->
+
+    </div>
+</body>
+
+</html>

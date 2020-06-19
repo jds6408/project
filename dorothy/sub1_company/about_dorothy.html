@@ -1,0 +1,93 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>about_dorothy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/about_dorothy.css">
+    <link rel="stylesheet" href="common/css/sub1_company.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <div id="wrap">
+        <!--헤더 삽입 영역-->
+        <? include "../common/sub_header.html" ?>
+        <!--헤더 삽입 영역-->
+        <section class="content">
+            <div class="company_wrap">
+                <h2>COMPANY</h2>
+            </div>
+            <div class="btn_wrap">
+                <h2 class="hidden">컨텐츠 이동 버튼</h2>
+                <ul class="company_btn_wrap">
+                    <a href="about_dorothy.html">
+                        <li class="btn active">About</li>
+                    </a>
+                    <a href="recruit.html">
+                        <li class="btn">Recruit</li>
+                    </a>
+                    <a href="map.html">
+                        <li class="btn">Map</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="sub_menu_wrap">
+                <ul class="sub_menu">
+                    <li class="sub_menu_list"><a href="../index.html"><i class="fas fa-home"></i> home &gt;</a></li>
+                    <li class="sub_menu_list"><a href="#">company &gt;</a></li>
+                    <li class="sub_menu_list"><a href="about_dorothy.html">about</a></li>
+                </ul>
+            </div>
+            <!--메인 컨텐츠-->
+
+            <div class="introduce_company">
+
+                <img src="images/about_dorothy/company_pic.png" alt="신승훈 사진">
+                <div class="introduce_company_txt_wrap">
+                    <h3 class="introduce_company_txt">
+                        About Dorothy
+                    </h3>
+                    <p class="txt1">프로듀서 신승훈의 노하우와 전문인력의 제작시스템을 갖춘 <br>
+                        <strong class="st1">아시아를 하나로 잇는<br>
+                            종합엔터테인먼트사 <span class="red">도로시컴퍼니(주)</span></strong>
+                    </p>
+
+                    <p class="txt2">도로시컴퍼니(주)는 프로듀서 신승훈을 중심으로 연예음반 및 공연 등<br> 영향력 있는 비즈니스 컨텐츠 등을 기획, 제작하고 있습니다. <br>
+                        또한 현재 도로시컴퍼니(주)만의 캐스팅, 트레이닝 시스템을 개발하여 인재들을 <br> 발굴 신인 아티스트 육성에도 힘을 쓰고 있습니다. <br>
+                        가수 <strong>신승훈의 25년 음악 인생의 노하우와 전문 인력의 제작시스템</strong>으로 <br>다양한 엔터테인먼트 서비스를 제공하기 위해 노력하고, 한국을 기점으로 삼아 아시아를<br> 하나로 이을 수 잇는 <strong>종합엔터테인먼트사로 발돋움하고 있는 기업</strong>입니다.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!--메인 컨텐츠-->
+        <!--하단 삽입 영역-->
+        <? include "../common/sub_footer.html"?>
+        <!--하단 삽입 영역-->
+
+    </div>
+</body>
+
+</html>

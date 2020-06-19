@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Portfolio</title>
+    <meta name="author" content="Matthew Howell">
+    <meta name="description" content="fullPage continuous scrolling demo.">
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous">
+    <meta name="Resource-type" content="Document">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="profileWrap">
+        <div class="menuWrap">
+            <h1 class="profileName">Daseul Jeong</h1>
+
+            <ul id="menu">
+                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">PROFILE</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">PC</a></li>
+                <li data-menuanchor="4thPage"><a href="#4thPage">MOBILE</a></li>
+                <li data-menuanchor="5thPage"><a href="#5thPage">MEDIA</a></li>
+
+                <li data-menuanchor="6thPage"><a href="#6thPage">WORDPRESS</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="intro">
+                <span class="introImg"><img src="img/j2.JPG" alt="프로필 정다슬 사진"></span>
+                <div class="main-text"></div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="profile">
+                <div class="profileTxt">
+                    <h2>정 다 슬</h2>
+                    <span class="jobName">Web Publisher</span>
+                    <dl>
+                        <dt>Birth.</dt>
+                        <dd>1997.01.03</dd>
+                        <dt>Call.</dt>
+                        <dd>010.5915.6408</dd>
+                        <dt>Email.</dt>
+                        <dd>jds6408@naver.com</dd>
+                    </dl>
+                    <dl>
+                        <dt>Skills(Develop)</dt>
+                        <dd>- HTML5, CSS3, JavaScript, jQuery, Ajax, php(in clude) -</dd>
+                    </dl>
+                    <dl>
+                        <dt>Skills(Design)</dt>
+                        <dd>- Adobe Photoshop, illustrator -</dd>
+                    </dl>
+                    <div class="btns">
+                <a class="btn" href="http://github.com/jds6408/project1.git" target="_blank">GitHub 바로가기</a>
+                    <a class="btn" href="../portfolio_ppt/Web%20Portfolio.pdf" target="_blank">스토리보드 바로가기</a>
+                </div>
+                </div>
+                
+                
+                <div class="profileImg">
+                    <img src="img/profile.jpg"alt="프로필 사진">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="pcWrap">
+                <div class="pcImg">
+                    <img src="img/desktop.png" alt="컴퓨터 틀">
+                    <img src="img/pc.gif" alt="도로시컴퍼니 pc gif">
+                </div>
+                <div class="pcTxt">
+                    <h2>도로시 컴퍼니
+                        <strong>PC</strong>
+                        <br>
+                        웹 제작
+                    </h2>
+                    <p>사이트 기획의도: 텍스트로 충분히 작성 가능한<br> 정보들을 img로 처리를 하였고, 사진이 해상도에<br> 맞지 않고 늘어나 있어서 기업형 사이트를 <br>구축하였습니다. </p>
+                    <div class="timeSkill">
+                        <dl>
+                            <dt>제작 기간</dt>
+                            <dd>2019. 02. 26 ~ 03. 18 (약 3주)</dd>
+                        </dl>
+                        <dl>
+                            <dt>제작 스킬</dt>
+                            <dd>Adobe Photoshop, Illustrator</dd>
+                            <dd>HTML5/CSS3, Javascript, jQuery , Ajax(Json) </dd>
+                            <dd>, php(in clude)</dd>
+                            <dd>
+                                W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 대표 사이트별 테스트 완료</dd>
+                        </dl>
+                    </div>
+                    <div class="qr"><img src="img/QRCodePc.jpg" alt="qr"></div>
+                    <div class="link">
+                        <a href="http://jds6408.cafe24.com/dorothy" target="_blank">View Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="mobileWrap">
+                <div class="mobileImg">
+                    <img src="img/mobile.png" alt="모바일 틀">
+                    <img src="img/mobile.gif" alt="도로시컴퍼니 모바일 gif">
+                </div>
+                <div class="mobileTxt">
+                    <h2>도로시 컴퍼니
+                        <strong>MOBILE</strong>
+                        <br>
+                        웹 제작
+                    </h2>
+                    <p>사이트 기획의도: 정보가 많아서 가독성이 떨어지며, <br>
+                    사진이 해상도에 맞지 않고 늘어나 있어서 <br>모바일 사이트를 구축하였습니다.</p>
+                    <div class="timeSkill">
+                        <dl>
+                            <dt>제작 기간</dt>
+                            <dd>2019. 03. 25 ~ 04. 03 (약 2주)</dd>
+                        </dl>
+                        <dl>
+                            <dt>제작 스킬</dt>
+                            <dd>Adobe Photoshop, Illustrator</dd>
+                            <dd>HTML5/CSS3, Javascript, jQuery</dd>
+                            <dd>CSS3(media query)와 스크립트를 이용한 기기별 해상도 서비스<br>
+                                W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 대표 기기별 테스트 완료</dd>
+                        </dl>
+                    </div>
+                    <div class="qr"><img src="img/QRCodeMobile.jpg" alt="qr"></div>
+                    <div class="link">
+                        <a href="http://jds6408.cafe24.com/mobile" target="_blank">View Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="mediaWrap">
+                <div class="mediaImg">
+                    <div class="pcWrap"><img src="img/desktop.png" alt="모바일 틀">
+                        <img src="img/media1.gif" alt="보스베이비 pc gif"></div>
+                    <div class="mobileWrap">
+                        <img src="img/mobile.png" alt="모바일 틀">
+                        <img src="img/media.gif" alt="보스베이비 모바일 gif">
+                    </div>
+                </div>
+                <div class="mediaTxt">
+                    <h2>Boss Baby
+                        <strong>MEDIA</strong>
+                        <br>
+                        웹 제작
+                    </h2>
+                    <p>사이트 기획의도: 애니메이션 "Boss Baby"를 주제로<br> 한 사이트로써, 다양한 디바이스에서 폭 넓게 <br> 이용할 수 있도록,
+                        반응형 웹을 구축하였습니다.</p>
+                    <div class="timeSkill">
+                        <dl>
+                            <dt>제작 기간</dt>
+                            <dd>2019. 04. 06 ~ 04. 13 (약 1주)</dd>
+                        </dl>
+                        <dl>
+                            <dt>제작 스킬</dt>
+                            <dd>Adobe Photoshop, Illustrator</dd>
+                            <dd>HTML5/CSS3, Javascript, jQuery</dd>
+                            <dd>CSS3(media query)와 스크립트를 이용한<br> 디바이스/해상도별 반응형 UI 구현<br>
+                                W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH),<br> 대표 기기별 테스트 완료</dd>
+                        </dl>
+                    </div>
+                    <div class="qr"><img src="img/QRCodeMedia.jpg" alt="qr"></div>
+                    <div class="link">
+                        <a href="http://jds6408.cafe24.com/media" target="_blank">View Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="wpWrap">
+                <div class="wpImg">
+                    <div class="pcWrap"><img src="img/desktop.png" alt="모바일 틀">
+                        <img src="img/wp1.gif" alt="비비안웨스트우드 pc gif"></div>
+                    <div class="mobileWrap">
+                        <img src="img/mobile.png" alt="모바일 틀">
+                        <img src="img/wp.gif" alt="비비안웨스트우드 모바일 gif">
+                    </div>
+                </div>
+                <div class="wpTxt">
+                    <h2>Vivienne Westwood<br>
+                        <strong>Word Press</strong>
+                        
+                        웹 제작
+                    </h2>
+                    <p>사이트 기획의도 : 평소 관심있던 브랜드를 워드프레스 <br> 사이트에서 접목해서 컨셉을잡고 디자인을 해보고싶어서<br> 진행했습니다.
+                        <div class="timeSkill">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2019. 04. 15 ~ 04. 18 (약 4일)</dd>
+                            </dl>
+                            <dl>
+                                <dt>제작 스킬</dt>
+                                <dd>Adobe Photoshop, Illustrator</dd>
+                                <dd>HTML5/CSS3</dd>
+                                <dd>
+                                    wordpress 이용한 웹사이트 구현
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="qr"><img src="img/QRCodeWp.jpg" alt="qr"></div>
+                        <div class="link">
+                            <a href="http://jds64080.dothome.co.kr/wp" target="_blank">View Site</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/fullpage.js"></script>
+    <script src="js/examples.js"></script>
+    <script src="js/typer.js"></script>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            /*sectionsColor: ['rgba(0,0,0,.2)', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],*/
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+            navigation: true,
+            navigationTooltips: ['HOME', 'PROFILE', 'PC', 'MOBILE', 'MEDIA', 'WORDPRESS'],
+            showActiveTooltip: true,
+            menu: '#menu'
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            var el = document.querySelector('.main-text')
+            var options = {
+                text: '웹표준 ─ 웹접근성을 \n 지키며 나아가고 있는 \n 웹 ─ 퍼 블 리 셔 \n 정 다 슬 입 니 다.',
+                textSpeed: 95,
+                blinkSpeed: 0.06
+            }
+
+            var instance = new tinytyper(el, options);
+
+        }
+    </script>
+
+</body>
+
+</html>

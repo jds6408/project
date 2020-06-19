@@ -1,0 +1,38 @@
+
+section.media_sec{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+section.media_sec #content{
+    overflow: hidden;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+}
+section.media_sec #content div[class^=media]{
+    width: 33.33%;
+    float: left;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+}
+.media1,.media2,.media3{
+    opacity: 1;
+}
+.media4,.media5,.media6,.media7,.media8,.media9,.media10,.media11,.media12,.media13,.media14,.media15,.media16{
+    opacity: 0;
+}
+section.media_sec #content div[class^=media] img{
+    width: 100%;
+}
+section.media_sec #content div[class^=media] dl{
+    transition-delay: 
+}
+section.media_sec #content div[class^=media] dt{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+section.media_sec #content div[class^=media] dd{
+    font-size: 1.1em;
+    padding: 0px 0px 10px 0;
+}

@@ -1,0 +1,46 @@
+section.release_sec{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+section.release_sec #content{
+    overflow: hidden;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section.release_sec #content div[class^=release]{
+    width: 25%;
+    float: left;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+}
+section.release_sec #content div[class^=release] div{
+    overflow: hidden;
+}
+/*section.release_sec #content div[class^=release]:hover div{
+    border: 10px solid #efefef;
+}*/
+
+section.release_sec #content div[class^=release] img{
+    width: 100%;
+    filter: brightness(50%);
+}
+section.release_sec #content div[class^=release]:hover img{
+    filter: none;
+    transform: scale(1.1);
+    transition: 1s;
+}
+section.release_sec #content div[class^=release] dl{
+    text-align: center;
+}
+section.release_sec #content div[class^=release] dt{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+section.release_sec #content div[class^=release] dd{
+    font-size: 1.1em;
+    padding: 0px 0px 10px 0;
+}

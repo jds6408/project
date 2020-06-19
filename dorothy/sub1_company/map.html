@@ -1,0 +1,114 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="common/css/sub1_company.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script>
+     <script src="../js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+
+
+    <div id="wrap">
+        <!--헤더 삽입 영역-->
+        <? include "../common/sub_header.html" ?>
+        <!--헤더 삽입 영역-->
+
+
+        <section class="content">
+            <div class="company_wrap">
+                <h2>COMPANY</h2>
+            </div>
+            <div class="btn_wrap">
+                <h2 class="hidden">컨텐츠 이동 버튼</h2>
+                <ul class="company_btn_wrap">
+                    <a href="about_dorothy.html"><li class="btn ">About</li></a>
+                    <a href="recruit.html"><li class="btn">Recruit</li></a>
+                    <a href="map.html"><li class="btn active">Map</li></a>
+
+                </ul>
+            </div>
+
+            <div class="sub_menu_wrap">
+                <ul class="sub_menu">
+                    <li class="sub_menu_list"><a href="../index.html"><i class="fas fa-home"></i> home &gt;</a></li>
+                    <li class="sub_menu_list"><a href="#">company &gt;</a></li>
+                    <li class="sub_menu_list"><a href="map.html">map</a></li>
+                </ul>
+            </div>
+
+
+
+            <!--위치 컨텐츠-->
+
+            <div class="location_content">
+                <h2>CONTACT US</h2>
+                <span class="info">찾아오시는길</span>
+                <div id="map"></div>
+                <div class="contact">
+                    <div class="address">
+                        <p>도로시컴퍼니(주)</p>
+                        <p>(135-895)서울특별시 강남구 언주로 151길 12 도로시 빌딩 5층</p>
+                    </div>
+                    <div class="number_wrap">
+                        <div class="number">
+                            <a href="tel:02-3445-1674"><dl class="num">
+                                <dt><img src="images/icons/call.png" alt="call_icon_visiual"></dt>
+                                <dd>  02)3445-1674</dd>
+                            </dl></a>
+                            <dl class="fax">
+                                <dt><img src="images/icons/fax.png" alt="fax_icon_visiual"></dt>
+                                <dd>02)3445-1649</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <caption>대중교통안내표</caption>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">지하철 이용시
+                            </th>
+                            <td><span class="orange"><i class="fas fa-subway"></i> 3호선</span> 압구정역 3번출구 5분내외</td>
+                            <td><span class="yellow"><i class="fas fa-subway"></i> 분당선</span> 압구정 로데오역 5번출구 15분내외</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+        <!--메인 컨텐츠-->
+        <!--하단 삽입 영역-->
+        <? include "../common/sub_footer.html"?>
+        <!--하단 삽입 영역-->
+
+    </div>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3926191315d005168a87d7d63b8fe7a0"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

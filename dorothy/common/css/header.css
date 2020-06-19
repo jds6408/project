@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;box-sizing: border-box;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: "돋움"; font-size: 14px; color: #333;}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal;}
+a{color: #333; text-decoration: none;}
+img{border: 0; vertical-align: top;}
+.hidden {display: block; position: absolute; left: -1000%; width: 1px; height:1px; color: #fff;}
+/*********************************************************************COMMON header 영역(로고) *********************************************************************/
+/*********************************************************************skipNav 영역*********************************************************************/
+#skipNav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #a8191f;
+    font-size: 12px;
+}
+
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+    display: block;
+    height: auto;
+    padding: 10px 0;
+    background: #ffedbf
+}
+
+/*depth내려오는 것중에 가장긴걸로 height*/
+#header {
+    width:100%;
+    height: auto;
+    /*margin:0 auto;*/
+    position: fixed;
+     z-index: 100;
+    background-color:#fff;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#header #top_login{
+    text-align: right;
+    background: #a8191f;
+    color: #fff;
+    padding: 5px 5px;
+}
+#header #top_login a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+#header .head {
+    padding: 30px 0;
+}
+#header .head .logo {
+    display: block;
+    margin: 0 auto;
+    width: 127px;
+    height: 41px;
+    background: url(../images/logo.png);
+    text-indent: -999px;
+    overflow: hidden;
+}
+#header .head .logo a {
+    display: block;
+    width: 127px;
+    height: 41px;
+}
+/*position이 없어서 tab시 */
+.nav {
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+    /*padding-top: 18px;*/
+}
+
+.nav ul.dropdownmenu {
+    float: left;
+}
+
+.nav ul.dropdownmenu li.menu {
+    position: relative;
+    float: left;
+    width: 250px;
+    height:50px;
+    font-size: 1.2em;
+}
+
+.nav ul.dropdownmenu li h2 {
+    position: relative;
+    width: 250px;
+    height:50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav ul.dropdownmenu li a.depth1 {
+    position: absolute;
+    display: block;
+    font-size: 1.3em;
+    width: 250px;
+    height:50px;
+    line-height: 50px;
+}
+
+.nav ul.dropdownmenu li ul {
+    width: 250px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    line-height: 1.5em;
+    height: 400px;
+    display: none
+}
+
+.nav ul.dropdownmenu li ul li {
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav ul.dropdownmenu li ul li a {
+    color: #666;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+    font-size: .9em;
+}
+
+.nav ul.dropdownmenu li ul li a:hover {
+    color: #fff;
+    background-color: #a8191f;
+    text-decoration: none;
+}

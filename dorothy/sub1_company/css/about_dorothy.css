@@ -1,0 +1,83 @@
+.sub_menu_wrap{
+    width: 1200px;
+    margin: 100px auto 0px;
+    position: relative;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.sub_menu_wrap .sub_menu{
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    overflow: hidden;
+}
+.sub_menu_wrap .sub_menu .sub_menu_list {
+    width: 80px;
+    float: left;
+}
+
+.content .introduce_company{
+    overflow: hidden;
+}
+@keyframes ani{
+    from{
+        left: -2000px;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes ani2{
+    from{
+        right: -2000px;
+    }
+    to{
+        right: 0;
+    }
+}
+.introduce_company img{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    position: relative;
+    left: -2000px;
+    animation: ani 1s forwards ease-in-out;
+}
+.content .introduce_company_txt_wrap{
+    width: 50%;
+    margin-right: 5%;
+    float: right;
+    padding: 25px 60px 60px 100px;
+    position: relative;
+    right: -2000px;
+    animation: ani2 1s forwards ease-in-out;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.content .introduce_company .introduce_company_txt{
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 70px;
+    color: #eaeaea;font-family: 'Caveat', cursive;
+}
+.content .introduce_company .txt1{
+    font-size: 26px;
+    color: #4f5158;
+    line-height: 1.5em;
+}
+.content .introduce_company  strong{
+    font-size: 20px;
+}
+.content .introduce_company .st1{
+    font-size: 36px;
+    color: #333;
+    line-height: 1.5em;
+}
+.content .introduce_company .red{
+    color: #a8191f;
+}
+.content .introduce_company .txt2{
+    padding-top: 50px;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+

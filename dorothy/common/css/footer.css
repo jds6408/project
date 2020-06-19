@@ -1,0 +1,116 @@
+/*********************************************************************
+footer 영역 *********************************************************************/
+#footer{
+    position: relative;
+    top: 50px;
+    background: #1f1d1d;
+    font-size: 1.1em;
+    overflow: hidden;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#footer .footer_wrap{
+    overflow: hidden;
+    width: 80%;
+    margin: 50px auto;
+    color: #a9a8a8;
+}
+
+#footer .moveTop {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1em;
+    background: #333;
+    color: #fff
+}
+
+#footer .moveTop span {
+    display: block;
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+
+#footer .footer_wrap h3{
+    font-size: 1.2em;
+}
+#footer .footer_wrap h4{
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 5px;
+}
+#footer .footer_wrap p{
+    color:#636363;
+    font-size: 0.9em;
+}
+#footer .footer_wrap .footer_left{
+    width: 50%;
+    float: left;
+}
+#footer .footer_wrap .footer_right{
+    width: 50%;
+    float: right;
+}
+#footer .footer_wrap .footer_right .follow{
+    height: 60px;
+    margin-top: 1.8em;
+    margin-bottom: 2.3em;
+    overflow: hidden;
+}
+#footer .footer_wrap .footer_right .follow li{
+    float: left;
+    width: 90px;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#footer .footer_wrap .footer_right .follow li:hover {
+    color: #fff;
+}
+#footer .footer_wrap .footer_right .follow li img{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 25px;
+}
+#footer .footer_wrap .footer_right .follow li a{
+    font-size: 14px;
+}
+#footer .footer_wrap .footer_right .aud_faq_wrap{
+    overflow: hidden;
+    margin-top: 70px;
+}
+#footer .footer_wrap .footer_right .aud_faq_wrap .aud_left{
+    width: 50%;
+    float: left;
+}
+#footer .footer_wrap .footer_right .aud_faq_wrap .faq_right{
+    width: 50%;
+    float: right;
+}
+#footer .footer_wrap .footer_right .aud_faq_wrap .aud_left a
+,#footer .footer_wrap .footer_right .aud_faq_wrap .faq_right a{
+    margin-top: 20px;
+    display: block;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid #636363;
+    line-height: 45px;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+}
+#footer > p {
+    height: 43px;
+    line-height: 43px;
+    background: #2f2f2f;
+    text-align: center;
+    font-size: 0.8em;
+    color: #a9a8a8;
+}

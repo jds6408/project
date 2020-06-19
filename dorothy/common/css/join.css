@@ -1,0 +1,71 @@
+.content {
+    padding-top: 179px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -10000;
+}
+.content h2{
+    margin-top: 100px;
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom:50px;
+}
+table{
+    width: 50%;
+    margin: 0 auto;
+}
+tr{
+    clear: both;
+}
+th,
+td {
+    padding: 10px
+}
+input::placeholder{
+    font-size: .8em;
+}
+th {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    width: 80%;
+    border-bottom: 1px solid #ccc;
+}
+tr:last-of-type td{
+    border-bottom: none;
+}
+tr:last-of-type td a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    background-color: #a8191f;
+}
+input.hp{
+    width: 25%;
+}
+input,
+select {
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 1.2em;
+    border: 0;
+    background: #eee;
+}
+select{
+    width: 30%;
+}
+table tr:last-child td {
+    text-align: center;
+    padding: 20px 0;
+}

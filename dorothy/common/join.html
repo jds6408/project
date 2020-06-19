@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>join</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/fullnav.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <? include "../common/sub_header.html" ?>
+
+        <section class="content">
+
+            <h2>도로시 회원가입</h2>
+            <form name="member_form" method="post" action="modify.php">
+
+                <table>
+                    <caption class="hidden">도로시 회원가입</caption>
+                    <tr>
+                        <th scope="col"><label for="id">아이디</label></th>
+                        <td>
+                            <input type="text" placeholder="아이디를 입력해주세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col"><label for="pass">비밀번호</label></th>
+                        <td>
+                            <input type="password" name="pass" id="pass" placeholder="비밀번호를 입력해주세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col"><label for="pass_confirm">비밀번호확인</label></th>
+                        <td>
+                            <input type="password" name="pass_confirm" id="pass_confirm" required placeholder="비밀번호를 다시 입력해주세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col"><label for="name">이름</label></th>
+                        <td>
+                            <input type="text" name="name" id="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col"><label for="nick">닉네임</label></th>
+                        <td>
+                            <input type="text" name="nick" id="nick" required>
+                            <span id="loadtext2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">휴대폰</th>
+                        <td>
+                            <label class="hidden" for="hp1"></label>
+                            <input type="text" class="hp" name="hp1" id="hp1" required>-
+                            <label class="hidden" for="hp2"></label>
+                            <input type="text" class="hp" name="hp2" id="hp2" required> - <label class="hidden" for="hp3"></label>
+                            <input type="text" class="hp" name="hp3" id="hp3" required>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">이메일</th>
+                        <td>
+                            <label for="email1"><input type="text" id="email1" name="email1" required></label>
+                            @
+                            <label for="email2">
+                                <select>
+                                    <option value="naver.com">네이버</option>
+                                    <option value="daum.net">다음</option>
+                                    <option value="nate.com">네이트</option>
+                                    <option value="google.com">구글</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="../index.html">회원가입 하기</a>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+
+        </section>
+        <? include "../common/sub_footer.html" ?>
+
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+/*********************************************************************skipNav 영역*********************************************************************/
+#skipNav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #a8191f;
+    font-size: 12px;
+}
+
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+    display: block;
+    height: auto;
+    padding: 10px 0;
+    background: #ffedbf
+}
+
+/*********************************************************************컨텐츠 영역*********************************************************************/
+
+/*********************************************************************visiual banner 영역 *********************************************************************/
+.visiual_wrap {
+    /*header height값 만큼 패딩으로 처리함*/
+    padding-top: 179px;
+}
+
+/*********************************************************************news slide 영역 *********************************************************************/
+.news_wrap {
+    margin-top: 50px;
+}
+
+.news_wrap ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news_wrap ul li.news,
+.news_wrap ul li.news2 {
+    overflow: hidden;
+    margin: 100px 0;
+}
+
+.news_wrap ul li.news span.img_wrap {
+    display: block;
+    width: 40%;
+    float: right;
+    margin-right: 5%;
+    overflow: hidden;
+    position: relative;
+    right: -2000px;
+}
+
+.news_wrap ul li.news2 span.img_wrap {
+    display: block;
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    overflow: hidden;
+    position: relative;
+    left: -2000px;
+}
+
+.news_wrap ul li.news span.img_wrap img,
+.news_wrap ul li.news2 span.img_wrap img {
+    width: 100%;
+    transition: .5s;
+}
+
+.news_wrap ul li.news span.img_wrap:hover img,
+.news_wrap ul li.news2 span.img_wrap:hover img {
+    transform: scale(1.1);
+    transition: .5s;
+    filter: brightness(50%);
+}
+
+.news_wrap ul li.news span.img_wrap:hover span.link_go,
+.news_wrap ul li.news2 span.img_wrap:hover span.link_go {
+    opacity: 1;
+}
+
+.news_wrap ul li.news span.link_go,
+.news_wrap ul li.news2 span.link_go {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    color: white;
+    opacity: 0;
+    z-index: 10;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.news_wrap ul li.news p {
+    float: left;
+    width: 50%;
+    margin-top: 75px;
+    margin-left: 5%;
+    color: #4f5158;
+    padding-left: 150px;
+}
+
+.news_wrap ul li.news2 p {
+    float: right;
+    width: 50%;
+    margin-top: 75px;
+    margin-right: 5%;
+    color: #4f5158;
+    padding-left: 150px;
+}
+
+.news_wrap ul li.news p span.num,
+.news_wrap ul li.news2 p span.num {
+    display: block;
+    font-size: 5em;
+    color: #eaeaea;
+    font-weight: bold;
+    padding: 50px 0 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.news_wrap ul li.news p strong,
+.news_wrap ul li.news2 p strong {
+    display: block;
+    font-size: 3.5em;
+    color: #333;
+    padding: 20px 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.news_wrap ul li.news p span.txt,
+.news_wrap ul li.news2 p span.txt {
+    display: block;
+    font-size: 1.5em;
+    padding: 10px 0;
+    line-height: 1.5em;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*********************************************************************news slide 영역 *********************************************************************/
+
+
+/*********************************************************************artist notice 영역 *********************************************************************/
+.artist_notice_wrap .artist_notice {
+    background: url(../images/artist_introduce_rothy4.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.artist_notice_wrap .artist_notice .border_box {
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    position: relative;
+    color: #333;
+    opacity: 0;
+}
+
+.artist_notice_wrap .artist_notice .top_intro {
+    padding-bottom: 25px;
+    border-bottom: 1.5px solid #a8191f;
+}
+
+.artist_notice_wrap .artist_notice .intro {
+    display: block;
+    font-size: 3.5em;
+    line-height: 1.5em;
+    padding: 15px 30px;
+    font-family: 'Caveat', cursive;
+}
+
+.artist_notice_wrap .artist_notice .name {
+    display: block;
+    font-size: 3em;
+    padding: 15px 60px;
+    font-family: 'Caveat', cursive;
+}
+
+.artist_notice_wrap .artist_notice .rothy {
+    overflow: hidden;
+    padding: 80px 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.artist_notice_wrap .artist_notice .left_info_content {
+    width: 50%;
+    float: left;
+}
+
+.artist_notice_wrap .artist_notice .left_info_content p:first-child {
+    font-size: 1.5em;
+    padding-bottom: 25px;
+}
+
+.artist_notice_wrap .artist_notice .left_info_content p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.artist_notice_wrap .artist_notice .right_icon_content {
+    width: 50%;
+    float: right;
+}
+
+.artist_notice_wrap .artist_notice .right_icon_content ul {
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.artist_notice_wrap .artist_notice .right_icon_content ul li a i {
+    color: #a8191f;
+    margin-right: 5px;
+}
+
+.artist_notice_wrap .artist_notice .right_icon_content ul li {
+    float: left;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+.artist_notice_wrap .artist_notice .right_icon_content ul li:hover {
+    border-bottom: 2px solid #a8191f;
+}
+
+.artist_notice_wrap .artist_notice .right_icon_content ul li a {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.border_box .more {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 1em;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+@keyframes ani {
+    from {
+        right: -20px;
+    }
+
+    to {
+        right: -30px;
+    }
+}
+
+.border_box .more i {
+    position: absolute;
+    color: #a8191f;
+    right: -20px;
+    animation: ani .7s infinite alternate;
+}
+
+#showimage {
+    z-index: 99;
+    position: absolute;
+    width: 322px;
+    left: 200px;
+    top: 300px;
+}
+
+.noticetxt {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+
+/*********************************************************************artist notice 영역 *********************************************************************/
+
+/*********************************************************************회사소개,채용정보,오디션관련질의응답 시작*********************************************************************/
+
+.information_box {
+    margin-top: 100px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.information_box ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*.information_box ul li.company:hover span {
+    filter: none;
+    transition: 1s;
+
+}
+
+.information_box ul li.recruit:hover span {
+    filter: none;
+    transition: 1s;
+}
+
+.information_box ul li.aud:hover span {
+    filter: none;
+    transition: 1s;
+}*/
+
+.information_box ul li.company,
+.information_box ul li.recruit,
+.information_box ul li.aud {
+    background-color: #f2f4f8;
+    overflow: hidden;
+    margin-top: 50px;
+    transition: 1s;
+    position: relative;
+    left: -2000px;
+}
+
+.information_box ul li.company span,
+.information_box ul li.aud span {
+    display: block;
+    float: left;
+    filter: brightness(50%);
+}
+
+.information_box ul li.recruit span {
+    float: right;
+    display: block;
+    filter: brightness(50%);
+}
+
+.information_box ul li.company span img,
+.information_box ul li.recruit span img,
+.information_box ul li.aud span img {
+    width: 100%;
+
+}
+
+.information_box ul li.company p {
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.information_box ul li.recruit p,
+.information_box ul li.aud p {
+    float: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.information_box ul li.company p strong,
+.information_box ul li.recruit p strong,
+.information_box ul li.aud p strong {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 50px;
+}

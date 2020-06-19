@@ -1,0 +1,760 @@
+@CHARSET "ISO-8859-1";
+
+/* Reset CSS
+ * --------------------------------------- */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+caption,
+th {
+    text-align: left;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #333;
+    color: rgba(0, 0, 0, 0.5);
+    background: url(../img/b2.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    position: relative;
+}
+
+p {
+    font-size: 2em;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+/***********************************************상단 메뉴바 시작*/
+.profileWrap {
+    position: fixed;
+    z-index: 70;
+    height: 70px;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 2px solid #333;
+   font-family: 'Padauk', sans-serif;
+}
+
+.profileWrap .menuWrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/*
+.profileWrap:after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+*/
+
+.profileName {
+    float: left;
+    color: #333;
+    width: 35%;
+    font-size: 3em;
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+
+#menu {
+    width: 65%;
+    padding-top: 17.5px;
+    padding-left: 150px;
+    float: right;
+    box-sizing: border-box;
+}
+
+#menu li {
+    float: left;
+    padding: 15px;
+    font-size: 1em;
+}
+
+#menu li.active {
+    color: #333;
+    font-size: 1.2em;
+    padding-top: 12px;
+}
+
+#menu li a {
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+#menu li.active a:hover {
+    color: #eaeaea;
+}
+
+/*
+#menu li:hover {}
+
+#menu li a,
+#menu li.active a {}
+*/
+
+#menu li.active a {
+    color: #fff;
+}
+
+/*******************************************상단 메뉴바 끝*/
+
+
+/***************************************섹션1 intro시작 */
+.intro {
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 95px;
+}
+
+.intro span.introImg {
+    display: block;
+    width: 350px;
+    height: 350px;
+    padding-top: 125px;
+    padding-left: 200px;
+    float: left;
+}
+
+.intro span.introImg img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main-text {
+    padding-top: 75px;
+    padding-right: 250px;
+    float: right;
+    font-family: '돋움', serif;
+    font-size: 36px;
+    color: #333;
+    text-align: left;
+    margin: 30px auto;
+    line-height: 2em;
+    writing-mode: tb-rl;
+}
+
+/***************************************섹션1 intro끝 */
+
+/***************************************섹션2 profile시작 */
+#fullpage #section1 .profile {
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 95px;
+}
+
+.profile .profileTxt {
+    float: left;
+    padding-left: 120px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.profile .profileImg {
+    float: right;
+    width: 40%;
+}
+
+.profile .profileImg img {
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.profile .profileTxt h2 {
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+.profile .profileTxt span.jobName {
+    font-size: 2em;
+    display: block;
+    padding: 20px;
+    margin: 10px 0 20px;
+}
+
+.profile .profileTxt dl:first-of-type {
+    font-size: 1.2em;
+}
+
+.profile .profileTxt dl:first-of-type dt {
+    float: left;
+    margin: 0px 20px;
+    margin-bottom: 2%;
+}
+
+.profile .profileTxt dl:first-of-type dd {
+    margin-bottom: 2%;
+    text-align: left;
+    margin-left: 140px;
+}
+
+.profile .profileTxt dl:nth-of-type(2) {
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+.profile .profileTxt dl:nth-of-type(2) dt {
+    margin: 0px 20px;
+    margin-bottom: 2%;
+}
+
+.profile .profileTxt dl:nth-of-type(2) dd {
+    margin-bottom: 2%;
+    margin-left: 20px;
+}
+
+.profile .profileTxt dl:nth-of-type(3) {
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+.profile .profileTxt dl:nth-of-type(3) dt {
+    margin: 0px 20px;
+    margin-bottom: 2%;
+}
+
+.profile .profileTxt dl:nth-of-type(3) dd {
+    margin-bottom: 2%;
+    margin-left: 20px;
+}
+
+.profile .btns {
+    overflow: hidden;
+}
+
+.profile .btns a {
+    float: left;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    width: 40%;
+    margin-top: 10px;
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 30px;
+}
+
+/***************************************섹션2 profile끝 */
+
+
+/*******************************************************
+기업형 페이지*******************************************************/
+#fullpage #section2 .pcWrap {
+    overflow: hidden;
+    width: 1280px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#fullpage #section2 .pcImg {
+    float: left;
+    width: 50%;
+    margin-top: 10%;
+    position: relative;
+}
+
+#fullpage #section2 .pcImg img:first-of-type {
+    width: 100%;
+}
+
+#fullpage #section2 .pcImg img:nth-of-type(2) {
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    left: 3%;
+    top: 3.5%;
+}
+
+#fullpage #section2 .pcTxt {
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+#fullpage #section2 .pcTxt h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+
+    border-bottom: 3px solid #333;
+}
+
+#fullpage #section2 .pcTxt p {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #a8191f;
+}
+
+#fullpage #section2 .pcTxt .timeSkill {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fullpage #section2 .pcTxt .timeSkill dl {
+    overflow: hidden;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#fullpage #section2 .pcTxt .timeSkill dt {
+    float: left;
+}
+
+#fullpage #section2 .pcTxt .timeSkill dd {
+    margin-left: 100px;
+}
+
+#fullpage #section2 .pcTxt .qr {
+    position: absolute;
+    top: -1%;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+}
+#fullpage #section2 .pcTxt .qr img{
+    width: 100%;
+}
+#fullpage #section2 .pcTxt .link {
+    margin: 10px 0;
+}
+
+#fullpage #section2 .pcTxt .link a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    color: #fff;
+    background-color: #a8191f;
+
+}
+
+/*******************************************************
+모바일 페이지*******************************************************/
+
+#fullpage #section3 .mobileWrap {
+    overflow: hidden;
+    width: 1280px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#fullpage #section3 .mobileImg {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: relative;
+}
+
+#fullpage #section3 .mobileImg img:first-of-type {
+    width: 50%;
+}
+
+#fullpage #section3 .mobileImg img:nth-of-type(2) {
+    width: 42.5%;
+    position: absolute;
+    top: 9.4%;
+    left: 3.9%;
+}
+
+#fullpage #section3 .mobileTxt {
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 10%;
+    position: relative;
+}
+
+#fullpage #section3 .mobileTxt h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    border-bottom: 3px solid #333;
+}
+
+#fullpage #section3 .mobileTxt p {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #a8191f;
+}
+
+#fullpage #section3 .mobileTxt .timeSkill {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fullpage #section3 .mobileTxt .timeSkill dl {
+    overflow: hidden;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#fullpage #section3 .mobileTxt .timeSkill dt {
+    float: left;
+}
+
+#fullpage #section3 .mobileTxt .timeSkill dd {
+    margin-left: 100px;
+}
+
+#fullpage #section3 .mobileTxt .qr {
+    position: absolute;
+    top: -1%;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+}
+#fullpage #section3 .mobileTxt .qr img{
+    width: 100%;
+}
+#fullpage #section3 .mobileTxt .link {
+    margin: 10px 0;
+}
+
+#fullpage #section3 .mobileTxt .link a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    color: #fff;
+    background-color: #a8191f;
+
+}
+
+/*******************************************************
+반응형 페이지*******************************************************/
+
+#fullpage #section4 .mediaWrap {
+    overflow: hidden;
+    width: 1280px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#fullpage #section4 .mediaImg {
+    width: 50%;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+}
+
+#fullpage #section4 .mediaImg .pcWrap img:first-of-type {
+    width: 98%;
+}
+
+#fullpage #section4 .mediaImg .pcWrap img:nth-of-type(2) {
+    width: 91.5%;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+}
+
+#fullpage #section4 .mediaImg .mobileWrap img:first-of-type {
+    width: 32%;
+    position: absolute;
+    top: 28%;
+    left: 75%;
+}
+
+#fullpage #section4 .mediaImg .mobileWrap img:nth-of-type(2) {
+    position: absolute;
+    width: 27.5%;
+    top: 35.5%;
+    left: 77.3%;
+}
+
+#fullpage #section4 .mediaTxt {
+    float: right;
+    width: 40%;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#fullpage #section4 .mediaTxt h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    border-bottom: 3px solid #333;
+}
+
+#fullpage #section4 .mediaTxt p {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #75c8ed;
+}
+
+#fullpage #section4 .mediaTxt .timeSkill {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fullpage #section4 .mediaTxt .timeSkill dl {
+    overflow: hidden;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#fullpage #section4 .mediaTxt .timeSkill dt {
+    float: left;
+}
+
+#fullpage #section4 .mediaTxt .timeSkill dd {
+    margin-left: 100px;
+}
+
+#fullpage #section4 .mediaTxt .qr {
+    position: absolute;
+    top: -1%;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+}
+#fullpage #section4 .mediaTxt .qr img{
+    width: 100%;
+}
+#fullpage #section4 .mediaTxt .link {
+    margin: 10px 0;
+}
+
+#fullpage #section4 .mediaTxt .link a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    color: #fff;
+    background-color: #75c8ed;
+
+}
+
+/*******************************************************
+워드프레스 페이지*******************************************************/
+#fullpage #section5 .wpWrap {
+    overflow: hidden;
+    width: 1280px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#fullpage #section5 .wpImg {
+    width: 50%;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+}
+
+#fullpage #section5 .wpImg .pcWrap img:first-of-type {
+    width: 98%;
+}
+
+#fullpage #section5 .wpImg .pcWrap img:nth-of-type(2) {
+    width: 91.5%;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+}
+
+#fullpage #section5 .wpImg .mobileWrap img:first-of-type {
+    width: 32%;
+    position: absolute;
+    top: 28%;
+    left: 75%;
+}
+
+#fullpage #section5 .wpImg .mobileWrap img:nth-of-type(2) {
+    position: absolute;
+    width: 27.5%;
+    top: 35.5%;
+    left: 77.3%;
+}
+
+#fullpage #section5 .wpTxt {
+    float: right;
+    width: 40%;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#fullpage #section5 .wpTxt h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    border-bottom: 3px solid #333;
+}
+
+#fullpage #section5 .wpTxt p {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: rgb(218, 165, 32);
+}
+
+#fullpage #section5 .wpTxt .timeSkill {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fullpage #section5 .wpTxt .timeSkill dl {
+    overflow: hidden;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#fullpage #section5 .wpTxt .timeSkill dt {
+    float: left;
+}
+
+#fullpage #section5 .wpTxt .timeSkill dd {
+    margin-left: 100px;
+}
+
+#fullpage #section5 .wpTxt .qr {
+    position: absolute;
+    top: -1%;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+}
+#fullpage #section5 .wpTxt .qr img{
+    width: 100%;
+}
+#fullpage #section5 .wpTxt .link {
+    margin: 10px 0;
+}
+
+#fullpage #section5 .wpTxt .link a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    color: #fff;
+    background: rgb(218, 165, 32)
+}

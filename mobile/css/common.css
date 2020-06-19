@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/* 모바일 코딩 필수 공통영역 */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    font-family: '맑은 고딕', 'Malgun Gothic', '나눔 고딕', 'nanum gothic', 'dotum', '돋움', sans-serif;
+    /*font-family:돋움, Dotum;*/
+}
+
+img,
+fieldset {
+    border: 0;
+    vertical-align: top
+}
+
+ul,
+ol,
+li,
+dl {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+hr {
+    display: none;
+}
+
+a {
+    color: inherit;
+}
+
+a,
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+em,
+i,
+address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+legend,
+caption {
+    display: none;
+    clear: both;
+}
+
+input,
+textarea,
+select,
+button,
+table {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+section,
+nav,
+article,
+aside,
+hgroup,
+header,
+footer {
+    display: block
+}
+
+textarea,
+input {
+    border-radius: 1px;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+#skipNav,
+.hidden {
+    display: block;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 모든페이지 공통영역 - header 영역  */
+#headerArea {
+    width: 100%;
+    position:fixed;
+    background: #fff;
+    z-index: 20;
+    top:0;
+    box-shadow: 1px 1px 2px 1px #ccc
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none
+}
+
+#headerArea .logo {
+    height: 42px;
+}
+
+#headerArea .logo a {
+    text-indent: -999px;
+    background: url(../images/logo.png) center center no-repeat;
+    background-size: 74px 24px;
+    display: block;
+    margin: 10px 0;
+    height: 30px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #headerArea .logo a {
+        background: url("../images/logo.png") center center no-repeat;
+        background-size: 74px 24px;
+    }
+}
+
+#headerArea .btn {
+    display: block;
+    font-size: 1.5em;
+    color: #a8191f;
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+#gnb {
+    clear: both;
+    width: 70%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    background: #a8191f;
+    opacity: 0;
+    z-index: 20
+}
+
+#gnb .mclose {
+    position: absolute;
+    left: -30px;
+    top: 0;
+    font-size: 2em;
+    color: #fff
+}
+
+#gnb li {
+    text-align: center;
+    font-weight: bold;
+}
+
+#gnb li h3 > a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: all .5s
+}
+
+#gnb li h3 > a:hover {
+    background: #fff;
+    color: #a8191f
+}
+
+
+#gnb li a {
+    display: block;
+    padding: 15px 0;
+    color: #fff
+}
+
+#gnb li ul {
+    background: #ba565b;
+    display: none
+}
+
+
+/* 모든페이지 공통영역 - footer 영역  */
+#footerArea {
+    clear: both;
+    padding-top: 15px;
+    padding-bottom:15px;
+    text-align: center;
+    font-size: 12px;
+    background: #666;
+    color: #fff;
+    position: relative;
+}
+
+#footerArea .moveTop {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    background: #333;
+    color: #fff
+}
+
+#footerArea .moveTop span {
+    display: block;
+    margin-top: 15px
+}
+#headerArea .logo {
+    height: 42px;
+}
+
+#footerArea span {
+    display: block;
+}
+#footerArea span img.footerLogo {
+    display: block;
+    width: 74px;
+    height: 24px;
+    margin:  15px auto;
+}
+
+#footerArea strong {
+    display: block;
+    font-size: 1.15em;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#footerArea a {
+    color: #fff;
+}
+
+#footerArea address {
+    line-height: 1.6em;
+    font-size: .95em;
+    margin-bottom: 10px
+}
+
+#footerArea .cpright {
+    font-size: .95em;
+    margin-bottom: 10px
+}
+
+@media screen and (max-width:480px) {
+    #wrap {
+        min-width:320px;
+    }
+}
+
+#content {margin-top: 42px}

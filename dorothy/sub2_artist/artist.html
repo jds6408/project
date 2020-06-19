@@ -1,0 +1,303 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>artist</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link rel="stylesheet" href="css/artist.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script>
+    <script src="common/js/scroll.js"></script>
+    <script src="common/js/btn.js"></script>
+    <script src="common/js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.popup-youtube').magnificPopup({
+                disableOn: 320,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: true,
+
+                fixedContentPos: false
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <div class="wrap">
+        <!--헤더 삽입 영역-->
+        <? include "../common/sub_header.html" ?>
+        <!--헤더 삽입 영역-->
+
+        <section class="content">
+            <div class="artist_wrap_sin">
+                <h2>Artist</h2>
+            </div>
+            <div class="sub_menu_wrap">
+                <ul class="sub_menu">
+                    <li class="sub_menu_list"><a href="../index.html"><i class="fas fa-home"></i> home &gt;</a></li>
+                    <li class="sub_menu_list"><a href="#">artist &gt;</a></li>
+                    <li class="sub_menu_list"><a href="artist.html">신승훈 </a></li>
+                </ul>
+            </div>
+
+            <div class="artist_introduce">
+                <div class="tabMenu">
+                    <a href="./artist.html" class="btnTab active">
+                        신승훈
+                    </a>
+                    <a href="./artist2.html" class="btnTab">로시 (Rothy)</a>
+                </div>
+                <article class="profile">
+                    <div class="intro">
+                        <h3>Introduce</h3>
+                        <div class="leftBox">
+                            <img src="images/sin/introduce_sin.jpg" alt="신승훈 프로필 사진">
+                        </div>
+                        <div class="rightBox">
+                            <dl>
+                                <dt class="name">신승훈
+                                </dt>
+                                <dd class="job">Singer
+                                </dd>
+                            </dl>
+
+
+                            <dl>
+                                <dt class="q">생일</dt>
+                                <dd class="a">1968.03.01</dd>
+                                <dt class="q">혈액형</dt>
+                                <dd class="a">RH+O형</dd>
+                                <dt class="q">데뷔</dt>
+                                <dd class="a">1990년 자작곡 '미소 속에 비친 그대' 데뷔</dd>
+                                <dt class="q">주요근황</dt>
+                                <dd class="a">
+                                    <ul>
+                                        <li>
+                                            더콜 Remember 프로듀싱
+                                            (18.06.30)
+                                        </li>
+                                        <li>
+                                            디싱 Limited Edition
+                                            (17.11.27)
+                                        </li>
+                                        <li>
+                                            I AM ..&amp;I AM
+                                            (15.11.12)
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+
+
+
+                        </div>
+                    </div>
+                </article>
+                <article class="albums">
+                    <h3>Albums</h3>
+
+
+                    <ul>
+                        <li><img src="images/sin/album1.png" alt="신승훈 앨범자켓사진">
+                            <span>더 콜 | Remember</span>
+                        </li>
+                        <li><img src="images/sin/album2.jpg" alt="신승훈 앨범자켓사진">
+                            <span>더 콜 | Super Star</span></li>
+                        <li><img src="images/sin/album3.jpg" alt="신승훈 앨범자켓사진">
+                            <span>더 콜 | Lullaby</span></li>
+                        <li><img src="images/sin/album4.jpg" alt="신승훈 앨범자켓사진"><span>더 콜 | Fly Away</span></li>
+                        <li><img src="images/sin/album5.jpg" alt="신승훈 앨범자켓사진"><span>정규 | 11집 part2.</span></li>
+                        <li><img src="images/sin/album6.jpg" alt="신승훈 앨범자켓사진"><span>정규 | 11집</span></li>
+                        <li><img src="images/sin/album7.jpg" alt="신승훈 앨범자켓사진"><span>디싱 | Polaroid</span></li>
+                        <li><img src="images/sin/album8.png" alt="신승훈 앨범자켓사진">
+                            <span>베스트 | 20th Anniversary</span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="images/sin/album9.jpg" alt="신승훈 앨범자켓사진"><span>EP | Radio Wave</span></li>
+                        <li><img src="images/sin/album10.jpg" alt="신승훈 앨범자켓사진"><span>EP | Great Wave</span></li>
+                        <li><img src="images/sin/album11.png" alt="신승훈 앨범자켓사진"><span>정규 | 10집 The Romanticist</span></li>
+                        <li><img src="images/sin/album12.jpg" alt="신승훈 앨범자켓사진"><span>베스트 | The Legend</span></li>
+
+                        <li><img src="images/sin/allbum13.png" alt="신승훈 앨범자켓사진"><span>정규 | 7집 Desire To Fly High</span></li>
+                    </ul>
+
+                    <a class="more">More</a>
+                </article>
+                <article class="video">
+                    <h3 class="v_txt">Video</h3>
+                    <div class="vid">
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=cSA-eg-CVy8"><img src="images/sin/video1.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">여전히 헤어짐은 처음처럼 아파서 <br> Official MV</p>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=sSmm1JQrtgU"><img src="images/sin/video2.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">여전히 헤어짐은 처음처럼 아파서 <br> Teaser #4</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6La1LsNSnbo"><img src="images/sin/video3.png" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">그러자 우리 Teaser #3</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="clip_part">
+
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=-YoWH7kwsEk"><img src="images/sin/video4.png" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">늦어도 11월에는 Teaser #2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=bXXKK_HBvJk"><img src="images/sin/video5.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">내가 나에게 Teaser #1</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="clip_part">
+
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=cMiauqOgCNw"><img src="images/sin/video6.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">이 또한 지나가리라 Official Lyric Video</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=_IgVj96jQZ0"><img src="images/sin/video7.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">이 또한 지나가리라 Teaser</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a class="more">More</a>
+
+                    </div>
+                </article>
+
+                <article class="gallery">
+                    <h3>Gallery</h3>
+                    <div>
+                        <ul>
+                            <li><img src="images/sin/gallery7.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/sin/gallery3.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/sin/gallery2.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/sin/gallery6.jpg" alt="신승훈 갤러리 사진"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/sin/gallery4.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/sin/gallery5.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/sin/gallery1.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/sin/gallery8.jpg" alt="신승훈 갤러리 사진"></li>
+                        </ul>
+                        <a class="more">More</a>
+
+
+                    </div>
+                </article>
+
+            </div>
+
+
+
+
+
+        </section>
+        <!--하단 삽입 영역-->
+        <? include "../common/sub_footer.html"?>
+        <!--하단 삽입 영역-->
+
+
+    </div>
+</body>
+
+</html>

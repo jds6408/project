@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.redTop{
+    border: 15px solid rgba(168, 25, 31,.9);
+    position: relative;
+}
+a.home{
+    display: block;
+    width: 30%;
+    text-decoration: none;
+    position: absolute;
+    top: 3px;
+    left: 30px;
+    color: #fff;
+    font-size: 1.2em;
+}
+a.home i {
+    letter-spacing: 5px;
+}
+.content .login{    
+    width: 600px;
+    padding: 40px;
+    margin: 150px auto 0;
+    font-weight: bold;
+}
+.content .login .title{
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.content .id_input .id_pw_inner ul{
+    list-style: none;
+}
+.content .id_input .id_pw_inner ul li.id{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align:center;
+}
+.content .id_input .id_pw_inner ul li.id input{
+    border: none;
+     width: 500px;
+    height: 50px;
+    border-bottom: 3px solid #a8191f;
+    background: none;
+     font-size: 1em;
+    padding: 5px 0 0;
+}
+.content .id_input .id_pw_inner ul li.pw{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.content .id_input .id_pw_inner ul li.pw input{
+    margin: 0 auto;
+    border: none;
+    width: 500px;
+    height: 50px;
+    border-bottom: 3px solid #a8191f;
+    background: none;
+    font-size: 1em;
+    padding: 5px 0 0;
+}
+.content .login_button{
+    text-align: center;
+    padding: 0 0 20px;
+    margin-bottom: 30px;
+}
+.content .login_button a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    background-color: #a8191f;
+}
+.content .login_form .login_inner .btn{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content .login_form .login_inner .btn a{
+    color: #333;
+    text-decoration: none;
+    font-size: .7em;
+}
+.redBottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border: 15px solid rgba(168, 25, 31,.9);
+    z-index: 10;
+}
+

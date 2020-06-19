@@ -1,0 +1,304 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>artist</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/artist.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script>
+    <script src="common/js/scroll.js"></script>
+    <script src="common/js/btn.js"></script>
+    <script src="common/js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() {
+            $('.popup-youtube').magnificPopup({
+                disableOn: 320,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: true,
+
+                fixedContentPos: false
+            });
+        });
+        </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <div class="wrap">
+        <!--헤더 삽입 영역-->
+        <? include "../common/sub_header.html" ?>
+        <!--헤더 삽입 영역-->
+        <section class="content">
+            <div class="artist_wrap_rothy active">
+                <h2>Artist</h2>
+            </div>
+            <div class="sub_menu_wrap">
+                <ul class="sub_menu">
+                    <li class="sub_menu_list"><a href="../index.html"><i class="fas fa-home"></i> home &gt;</a></li>
+                    <li class="sub_menu_list"><a href="#">artist &gt;</a></li><li class="sub_menu_list"><a href="artist2.html">로시 </a></li>
+                </ul>
+            </div>
+
+            <div class="artist_introduce">
+                <div class="tabMenu">
+                    <a href="./artist.html" class="btnTab">
+                        신승훈
+                    </a>
+                    <a href="./artist2.html" class="btnTab active">로시 (Rothy)</a>
+                </div>
+                <article class="profile">
+                    <div class="intro">
+                        <h3>Introduce</h3>
+                        <div class="leftBox">
+                            <img src="images/rothy/introduce_rothy.jpg" alt="신승훈 프로필 사진">
+                        </div>
+                        <div class="rightBox">
+                            <dl>
+                                <dt class="name">로시(Rothy)
+                                </dt>
+                                <dd class="job">Singer
+                                </dd>
+                            </dl>
+
+
+                            <dl>
+                                <dt class="q">생일</dt>
+                                <dd class="a">1999.05.06</dd>
+                                <dt class="q">혈액형</dt>
+                                <dd class="a">AB형</dd>
+                                <dt class="q">데뷔</dt>
+                                <dd class="a">2017년 첫번째 싱글 앨범 'Stars' 데뷔</dd>
+                                <dt class="q">주요근황</dt>
+                                <dd class="a">
+                                    <ul>
+                                        <li>
+                                            두번째 미니 - Color Of Rothy
+                                            (19.05.27)
+                                        </li>
+                                        <li>
+                                            세번째 싱글 - 다 핀 꽃
+                                            (19.01.30)
+                                        </li>
+                                        <li>
+                                            첫번째 미니 - Shape Of Rothy
+                                            (18.08.30)
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+
+
+
+                        </div>
+                    </div>
+                </article>
+                <article class="albums">
+                   <a name="album"></a>
+                    <h3>Albums</h3>
+
+
+                    <ul>
+                        <li><img src="images/rothy/album1.jpg" alt="로시 앨범자켓사진">
+                            <span>2nd Mini | Color Of Rothy</span>
+                        </li>
+                        <li><img src="images/rothy/album2.jpg" alt="로시 앨범자켓사진">
+                            <span>3rd single | 다 핀 꽃</span></li>
+                        <li><img src="images/rothy/album3.jpg" alt="로시 앨범자켓사진">
+                            <span>1st Mini | shape Of Rothy</span></li>
+                        <li><img src="images/rothy/album4.jpg" alt="로시 앨범자켓사진"><span>2nd single | 술래</span></li>
+                        <li><img src="images/rothy/album5.jpg" alt="로시 앨범자켓사진"><span>1st single | Stars</span></li>
+                    </ul>
+
+                    <a class="more">More</a>
+                </article>
+                <article class="video2">
+                   <a name="video"></a>
+                    <h3 class="v_txt">Video</h3>
+                    <div class="vid">
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=3PFJrUN7BXw"><img src="images/rothy/video1.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">Bee MV</p>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6zvS1c1SaC0"><img src="images/rothy/video2.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">Bee Teaser2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=rzOQgnEm7aw"><img src="images/rothy/video3.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">Bee Teaser1</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="clip_part">
+
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=kS-F6qaoc1A"><img src="images/rothy/video4.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">다 핀 꽃 MV</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=99uzXJJj-ug"><img src="images/rothy/video5.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">Burning MV</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="clip_part">
+
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=PLyb6Rs5Qjc"><img src="images/rothy/video6.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">잃어버린 시간을 찾아서 MV</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clip2">
+                            <div class="clip_part">
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=GNDeJ9Tjy8o"><img src="images/rothy/video7.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">잃어버린 시간을 찾아서 Teaser</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="clip_part">
+
+                                <div class="contentArea">
+                                    <div class="imgPart">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6hR-xAZlVQM"><img src="images/rothy/video8.jpg" alt="뮤직비디오 사진">
+                                            <div class="playBnt">
+                                                <img src="images/play.png" alt="플레이 버튼">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="subTitle">Burning Teaser</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="more">More</a>
+
+                    </div>
+                </article>
+
+                <article class="gallery">
+                   <a name="gallery"></a>
+                    <h3>Gallery</h3>
+                    <div>
+                        <ul>
+                            <li><img src="images/rothy/gallery1.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/rothy/gallery2.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/rothy/gallery3.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/rothy/gallery4.jpg" alt="신승훈 갤러리 사진"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/rothy/gallery5.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/rothy/gallery6.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/rothy/gallery7.jpg" alt="신승훈 갤러리 사진"></li>
+                            <li><img src="images/rothy/gallery8.jpg" alt="신승훈 갤러리 사진"></li>
+                        </ul>
+                        <a class="more">More</a>
+
+
+                    </div>
+                </article>
+
+            </div>
+
+
+
+
+
+        </section>
+        <!--하단 삽입 영역-->
+        <? include "../common/sub_footer.html"?>
+        <!--하단 삽입 영역-->
+
+
+    </div>
+</body>
+
+</html>

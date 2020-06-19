@@ -1,0 +1,96 @@
+
+#content h3{
+    color: #666;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 52px;
+    position: relative;
+}
+#content .opacBox{
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.3);/*
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);*/
+}
+
+#content .opacBox ul{
+    
+}
+#content .opacBox ul:nth-child(2){
+    display: none;
+}
+#content .opacBox ul li[class^=media]{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+} 
+#content .opacBox ul li a{
+    display: block;
+}
+#content .opacBox ul li a img{
+    width: 100%;
+}
+#content .opacBox ul li a dl{
+    text-align: center;
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+}
+#content .opacBox ul li a dl dt{
+    font-weight: bold;
+    padding: 20px 10px; 
+    position: relative;
+}
+@keyframes ani {
+    0%{
+        transform: scale(1);
+        right: 10px;
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.1);
+        right:5px;
+        opacity: 0.8;
+    }
+}
+
+#content .opacBox ul li a dl dt .icon {
+    right: 5px;
+    position: absolute;
+    animation: ani .7s infinite alternate;
+}
+#content .opacBox ul li a dl dt .icon i{
+    color: #a8191f;
+}
+#content .opacBox ul li a dl dd.tit{
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#content .opacBox ul li a dl dd.tit2{
+    font-size: .8em;
+    color: #a8191f;
+    padding-bottom: 10px;
+}
+#content .opacBox ul li a dl dd.tit3{
+    font-size: .7em;
+    
+}
+#content a.more {
+    display: block;
+    position: relative;
+    top: -10px;
+    margin: 10% auto 0%;
+    width: 30%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    background-color: rgba(255,255,255,0.3);
+    font-weight: 700;
+    border: 1px solid #333;
+}

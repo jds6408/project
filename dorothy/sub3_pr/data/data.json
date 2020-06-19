@@ -1,0 +1,100 @@
+{
+    "media": [
+        {
+            "cover": "images/media1.jpg",
+            "title": "Special Album [My Personas] 오케스트라 녹음 현장 스케치",
+            "name": "신승훈",
+            "date": "2020.04.08"
+    },
+        {
+            "cover": "images/media2.jpg",
+            "title": "Special Album [My Personas] Highlight Medley",
+            "name": "신승훈",
+            "date": "2020.04.08"
+    },
+        {
+            "cover": "images/media3.jpg",
+            "title": "Special Album [My Personas] 자켓 메이킹 필름",
+            "name": "신승훈",
+            "date": "2020.04.07"
+    },
+        {
+            "cover": "images/media4.jpg",
+            "title": "BEE Teaser 2",
+            "name": "로시",
+            "date": "2019.05.27"
+    },
+        {
+            "cover": "images/media5.jpg",
+            "title": "BEE Teaser 1",
+            "name": "로시",
+            "date": "2019.05.27"
+    },
+        {
+            "cover": "images/media6.jpg",
+            "title": "다 핀 꽃 M/V",
+            "name": "로시",
+            "date": "2019.01.31"
+    },
+        {
+            "cover": "images/media7.jpg",
+            "title": "Burning M/V",
+            "name": "로시",
+            "date": "2018.08.30"
+    },
+        {
+            "cover": "images/media8.jpg",
+            "title": "잃어버린 시간을 찾아서 M/V",
+            "name": "로시",
+            "date": "2018.08.30"
+    },
+        {
+            "cover": "images/media9.jpg",
+            "title": "잃어버린 시간을 찾아서 Teaser",
+            "name": "로시",
+            "date": "2018.08.29"
+    },
+        {
+            "cover": "images/media10.jpg",
+            "title": "버닝 Album Spoiler",
+            "name": "로시",
+            "date": "2018.08.29"
+    },
+        {
+            "cover": "images/media11.jpg",
+            "title": "버닝 Teaser",
+            "name": "로시",
+            "date": "2018.08.28"
+    },
+        {
+            "cover": "images/media12.jpg",
+            "title": "술래 M/V",
+            "name": "로시",
+            "date": "2018.06.02"
+    },
+        {
+            "cover": "images/media13.jpg",
+            "title": "술래 Teaser 2",
+            "name": "로시",
+            "date": "2018.05.30"
+    },
+        {
+            "cover": "images/media14.jpg",
+            "title": "술래 Teaser",
+            "name": "로시",
+            "date": "2018.05.28"
+    },
+        {
+            "cover": "images/media15.jpg",
+            "title": "Polaroid M/V",
+            "name": "신승훈",
+            "date": "2017.12.20"
+    },
+        {
+            "cover": "images/media16.jpg",
+            "title": "Stars M/V",
+            "name": "로시",
+            "date": "2017.12.20"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+#content{
+}
+#content h3{
+    color: #666;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 52px;
+}
+#content .back{
+    /*background: url(../images/back_release.jpg) repeat-y;
+    background-size: 100% 569px;*/
+    height: auto;
+}
+/*@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #content .back {
+        background: url("../images/back_releasex2.jpg") repeat-y;
+        background-size: 100% 569px;
+    }
+}*/
+#content .back .opacBox{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#content .back .opacBox ul{
+    overflow: hidden;
+    width: 100%;
+}
+#content .back .opacBox ul:nth-child(2){
+    display: none;
+}
+#content .back .opacBox ul li{
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 45%;
+}
+#content .back .opacBox ul li:nth-child(n){
+    float: left;
+    padding-left: 10px;
+}
+#content .back .opacBox ul li:nth-child(2n){
+    float: right;
+    padding-right: 10px;
+}
+#content .back .opacBox ul li.listBox a{
+    display: block;
+}
+#content .back .opacBox ul li.listBox a img{
+    width: 100%;
+    box-shadow: 1px 3px 5px 5px rgba(0,0,0,0.3);
+}
+#content .back .opacBox ul li.listBox dl{
+    display: block;
+    font-size: 1em;
+    padding: 10px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#content .back .opacBox ul li.listBox dt{
+    display: block;
+    padding-bottom: 5px;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+#content .back .opacBox ul li.listBox dd{
+    display: block;
+    line-height: 1.5em;
+    font-size: .9em;
+}
+
+#content .back .opacBox a.more {
+    display: block;
+    position: relative;
+    top: -10px;
+    margin: 5% auto 0%;
+    width: 30%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    font-weight: 700;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+

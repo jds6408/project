@@ -1,0 +1,117 @@
+#content{}
+#content h3{
+    color: #666;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 52px;
+}
+#content .subAudition{
+}
+#content .subAudition .top{
+    position: relative;
+}
+#content .subAudition .top .auditionTop{
+}
+#content .subAudition .top .auditionTop img{
+    width: 100%;
+    display: block;
+}
+#content .subAudition .top .textBox{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+#content .subAudition .top .textBox p{
+    background: rgba(0,0,0,0.3);
+    padding: 5px 0px;
+    color: #eee;
+    font-size: .9em;
+    line-height: 1.6em;
+    text-align: right;
+    padding-right: 10px;
+}
+#content .subAudition .applyBtn{
+    padding: 25px 0;
+    width: 100%;
+}
+
+#content .subAudition .applyBtn a {
+    display: block;
+    font-style: italic;
+    color: #efefef;
+    font-weight: 300;
+    background: rgba(168,25,31,0.7);
+    position: relative; 
+    left: 7.5%;
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.2em;  
+    opacity: 1;
+    border: 2px solid #fff;
+}
+@keyframes ani {
+    0%{
+        transform: scale(1);
+        right: 20px;
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.1);
+        right: 30px;
+        opacity: 0.8;
+    }
+}
+#content .subAudition .applyBtn a:after{
+    animation: ani .7s infinite alternate;
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 2px;
+    width: 18px;
+    display: inline-block;
+    background: url(../images/btn_arr.png) center center no-repeat;
+    background-size: 18px auto;
+}
+
+#content .subAudition .applyBtn a :hover{
+    font-weight: bold;
+    font-size: 1.55em;
+    opacity: 1;
+}
+#content .subAudition .cen {
+    position: relative;
+    height: 100%;
+}
+#content .subAudition .cen .auditionCen{
+    
+}
+#content .subAudition .cen .auditionCen img{
+    width: 100%;
+    display: block;
+}
+#content .subAudition .cen .textBox{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #eee;
+    font-size: .9em;
+    line-height: 2.5em;
+    text-align: center;
+    border: 1px solid #fff;
+}
+#content .subAudition .cen .textBox p{
+   padding: 10% 0;
+}
+
+
+
+
+
+

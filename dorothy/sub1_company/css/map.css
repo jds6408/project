@@ -1,0 +1,108 @@
+.sub_menu_wrap{
+    width: 1200px;
+    margin: 100px auto 0px;
+    position: relative;font-family: 'Nanum Gothic', sans-serif;
+}
+.sub_menu_wrap .sub_menu{
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    overflow: hidden;
+}
+.sub_menu_wrap .sub_menu .sub_menu_list {
+    width: 80px;
+    float: left;
+}
+.content .location_content{
+    width: 1200px;
+    margin: 0 auto;font-family: 'Nanum Gothic', sans-serif;
+}
+
+.content .location_content h2{
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 70px;
+    color: #eaeaea; font-family: 'Caveat', cursive;
+    line-height: 1.5em;
+}
+.content .location_content .info{
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+.content .location_content #map{
+    height: 400px;
+    border: 1px solid #333;
+}
+
+.content .location_content .contact{
+    margin-top: 80px;
+    overflow: hidden;
+}
+.content .location_content .contact .address h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+    
+}
+.content .location_content .contact .address p{
+    font-size: 1em;
+}
+.content .location_content .contact .address{
+    width: 900px;
+    float: left;
+}
+.content .location_content .contact .number_wrap{
+    overflow: hidden;
+}
+.content .location_content .contact .number_wrap .number{
+    overflow: hidden;
+}
+
+.content .location_content .contact .number_wrap .number .num{
+    width: 150px;
+    float: left;
+}
+
+.content .location_content .contact .number_wrap .number .num dt img
+,.content .location_content .contact .number_wrap .number .fax dt img{
+    width: 60px;
+    height: 60px;
+    margin-left: 45px;
+}
+
+.content .location_content .contact .number_wrap .number .num dd
+,.content .location_content .contact .number_wrap .number .fax dd{
+    text-align: center;
+}
+.content .location_content .contact .number_wrap .number .fax{
+    width: 150px;
+    float: right;
+}
+.location_content table{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 50px auto 100px;
+    border-collapse: collapse;
+}
+.location_content table caption{
+    margin: 50px 0 20px;
+}
+.location_content table td
+,.location_content table th{
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+.location_content table th{
+    color: #333;
+}
+.location_content table .orange{
+    color:  rgb(211,84,29);
+}
+.location_content table .yellow{
+    color:  rgb(240,195,42);
+    
+}

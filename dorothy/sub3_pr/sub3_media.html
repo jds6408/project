@@ -1,0 +1,76 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>media</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="common/css/sub3_pr.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <div class="wrap">
+        <!--헤더 삽입 영역-->
+        <? include "../common/sub_header.html" ?>
+        <!--헤더 삽입 영역-->
+        <div class="company_wrap">
+            <h2>Media</h2>
+        </div>
+        <div class="btn_wrap">
+            <h2 class="hidden">컨텐츠 이동 버튼</h2>
+            <ul class="company_btn_wrap">
+                <li class="btn active"><a class="change_color" href="sub3_media.html">Media</a></li>
+                <li class="btn"><a href="sub3_release.html">Release</a></li>
+
+            </ul>
+        </div>
+
+        <div class="sub_menu_wrap">
+            <ul class="sub_menu">
+                <li class="sub_menu_list"><a href="../index.html"><i class="fas fa-home"></i> home &gt;</a></li>
+                <li class="sub_menu_list"><a href="#">pr center &gt;</a></li>
+                <li class="sub_menu_list"><a href="sub3_media.html">media</a></li>
+            </ul>
+        </div>
+        <section class="media_sec">
+           <h3 class="hidden">media</h3>
+            <div id="content">
+            
+            
+            
+           
+            </div>
+        </section>
+
+        <!--하단 삽입 영역-->
+        <? include "../common/sub_footer.html"?>
+        <!--하단 삽입 영역-->
+
+
+    </div>
+    <script src="js/data-json.js"></script>
+</body>
+
+</html>

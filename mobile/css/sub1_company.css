@@ -1,0 +1,134 @@
+#content {}
+
+#content .tabs {
+    overflow: hidden;
+}
+
+.tabs {
+    position: relative;
+    margin-top: 52px;
+}
+
+.tabs a.tab {
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #a8191f;
+    opacity: .7;
+    padding: 13px 0;
+}
+
+.tabs a.tab1 {
+    width: 50%;
+    left: 0;
+    top: 0
+}
+
+.tabs a.tab2 {
+    width: 50%;
+    left: 50%;
+    top: 0
+}
+
+.tabs .contlist {
+    display: none;
+    padding: 15px;
+    line-height: 1.5em;
+}
+.tabs .contlist .page1{
+    margin-top: 29px;
+}
+.tabs .contlist .page2{
+    margin-top: 50px;
+}
+#content .tabs .contlist .page1 .company span{
+     display: block;
+}
+#content .tabs .contlist .page1 .company span img{
+width:100%;
+}
+
+#content .tabs .contlist .page1 .company p{
+    font-size: .9em;
+    text-align: justify;
+    line-height: 1.5em;
+    padding: 5% 5%;
+}
+#content .tabs .contlist .page1 .company p .topTxt{
+    display: block;
+    color: #666;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 10px 5px;
+    font-style: italic;
+}
+strong{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.red{
+    color: #a8191f;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+
+#content .tabs .contlist .page2 .mapWrap{
+    
+}
+#content .tabs .contlist .page2 .mapWrap #map{
+    width: 90%;
+    height: 250px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#content .tabs .contlist .page2 .mapWrap .mapText{
+    padding: 15px 20px;
+    overflow: hidden;
+}
+#content .tabs .contlist .page2 .mapWrap .mapText div h4{
+    font-size: 1.5em;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#content .tabs .contlist .page2 .mapWrap .mapText div ul
+,#content .tabs .contlist .page2 .mapWrap .mapText div p{
+    font-size: .9em;
+    margin-bottom: 15px;
+}
+#content .tabs .contlist .page2 .mapWrap .mapText div ul.content{
+    overflow: hidden;
+}
+#content .tabs .contlist .page2 .mapWrap .mapText div ul.content li.left{
+    width: 50%;
+    float: left;
+}
+
+#content .tabs .contlist .page2 .mapWrap .mapText div ul.content li.right{
+    width: 50%;
+    float: right;
+}
+#content .contlist .page2 .mapText div.contentNum{
+    overflow: hidden;
+}
+#content .contlist .page2 .mapText div.contentNum div.left{
+    float: left;
+    width: 50%;
+}
+#content .contlist .page2 .mapText div.contentNum div.right{
+    float: right;
+    width: 50%;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+
+}

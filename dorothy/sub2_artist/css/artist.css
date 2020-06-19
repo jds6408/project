@@ -1,0 +1,431 @@
+.content {
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*****************************************************************************************************/
+
+.content .sub_menu_wrap {
+    width: 1200px;
+    margin: 100px auto 0px;
+    position: relative;
+}
+
+.content .sub_menu_wrap .sub_menu {
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    overflow: hidden;
+}
+
+.content .sub_menu_wrap .sub_menu .sub_menu_list {
+    width: 80px;
+    float: left;
+}
+
+
+/********************************************************아티스트 소개 시작**********************************************************/
+
+.content .artist_wrap_sin {
+    height: 570px;
+    background: url(../images/banner_sin.jpg) 0 center no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding-top: 179px;
+}
+
+.content .artist_wrap_rothy {
+    height: 570px;
+    background: url(../images/banner_rothy.jpg) 0 center no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding-top: 179px;
+}
+
+.content .artist_wrap_sin h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content .artist_wrap_sin h2:before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.content .artist_wrap_rothy h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content .artist_wrap_rothy h2:before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+}
+
+
+.content .artist_introduce {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content .artist_introduce .tabMenu {
+    height: 90px;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.content .artist_introduce .tabMenu a {
+    display: block;
+    width: 500px;
+    margin: 0 50px;
+    padding: 10px;
+    line-height: 46px;
+    font-size: 2.3em;
+    font-weight: 700;
+    border-bottom: 4px solid #333;
+}
+
+.content .artist_introduce .tabMenu a:first-of-type {
+    float: left;
+}
+
+.content .artist_introduce .tabMenu a:last-of-type {
+    float: right;
+}
+
+.content .artist_introduce .tabMenu a.active {
+    border-color: #a8191f;
+    color: #a8191f
+}
+
+.content .artist_introduce .profile {
+    transition: 1s;
+}
+
+.content .artist_introduce .profile .intro {
+    overflow: hidden;
+}
+
+.content .artist_introduce .profile .intro h3 {
+    text-align: left;
+    text-indent: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #b2a8a8;
+     font-family: 'Caveat', cursive;
+}
+
+.content .artist_introduce .profile .intro .leftBox {
+    float: left;
+    margin-left: 150px;
+}
+
+.content .artist_introduce .profile .intro .rightBox {
+    float: right;
+    margin-right: 300px;
+    font-size: 1.5em;
+}
+
+.content .artist_introduce .profile .intro .rightBox .name {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.content .artist_introduce .profile .intro .rightBox .job {
+    padding: 20px 0;
+    font-size: 1.1em;
+
+}
+
+.content .artist_introduce .profile .intro .rightBox dl:nth-of-type(2) dt.q {
+    color: #a8191f;
+    font-size: .8em;
+    padding: 15px 0;
+}
+
+.content .artist_introduce .profile .intro .rightBox dl:nth-of-type(2) dd.a {
+    color: #666;
+    font-size: .7em;
+}
+
+.content .artist_introduce .profile .intro .rightBox dl:nth-of-type(2) dd.a:last-of-type ul li {
+    padding: 7px 0;
+}
+
+/********************************************************아티스트 소개 끝**********************************************************/
+
+
+/********************************************************아티스트 앨범 시작**********************************************************/
+.content .artist_introduce .albums {
+    overflow: hidden;
+}
+
+.content .artist_introduce .albums h3 {
+    text-align: left;
+    text-indent: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #b2a8a8;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #b2a8a8;
+     font-family: 'Caveat', cursive;
+}
+
+.content .artist_introduce .albums ul {
+    overflow: hidden;
+    margin-left: 100px;
+    position: relative;
+    bottom: -1000px;
+}
+
+.content .artist_introduce .albums ul li {
+    float: left;
+    padding: 5px;
+    position: relative;
+}
+
+.content .artist_introduce .albums ul:nth-of-type(2) {
+    display: none;
+}
+
+.content .artist_introduce .albums ul li:hover img {
+    filter: brightness(50%);
+    transition: .5s;
+}
+
+.content .artist_introduce .albums ul li:hover span {
+    display: block;
+}
+
+.content .artist_introduce .albums ul li span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    display: none;
+    transition-delay: 2s;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.content .artist_introduce .albums ul li img {
+    width: 250px;
+    height: 250px;
+}
+
+.content a.more {
+    cursor: pointer;
+    display: block;
+    margin: 5% auto;
+    width: 30%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 700;
+    border: 1px solid #333;
+    transition: 1s;
+}
+.content a.more:hover {
+    background: #a8191f;
+    color: #fff;
+    border: none;
+}
+/********************************************************아티스트 앨범 끝**********************************************************/
+
+/********************************************************아티스트 비디오 시작**********************************************************/
+
+.content .video,
+.content .video2 {
+    overflow: hidden;
+}
+
+.content .video .v_txt,
+.content .video2 .v_txt {
+    text-align: left;
+    text-indent: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    font-size: 3.5em;
+    color: #b2a8a8;
+     font-family: 'Caveat', cursive;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #b2a8a8;
+}
+
+.content .artist_introduce .profile .video .vid,
+.content .artist_introduce .profile .video2 .vid {
+    margin: 2%;
+}
+
+.clip2 {
+    width: 96%;
+    overflow: hidden;
+}
+
+.clip2:nth-of-type(3),
+.clip2:nth-of-type(4) {
+    display: none;
+}
+
+.clip2 .subTitle {
+    position: relative;
+    font-size: 1.4em;
+    text-align: center;
+    color: #333;
+    padding-top: 20px;
+    line-height: 1.5em;
+}
+
+.clip2 .subTitle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    margin-left: -50px;
+    background: #a8191f;
+}
+
+.clip2 .clip_part {
+    width: 50%;
+    float: left;
+}
+
+.clip2 .clip_part .contentArea {
+    position: relative;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+.clip2 .imgPart {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 30px
+}
+
+.clip2 .clip_part .contentArea .imgPart .popup-youtube > img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.clip2 .clip_part .contentArea p {
+    color: #333;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.clip2 .clip_part .playBnt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+    border-radius: 94px;
+    background: rgba(0, 0, 0, .6)
+}
+
+.clip2 .clip_part .imgPart:hover .playBnt {
+    background: rgba(255, 0, 0, .6)
+}
+
+.clip2 .clip_part .playBnt img {
+    position: relative;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -20px
+}
+
+
+/********************************************************아티스트 비디오 끝**********************************************************/
+/********************************************************아티스트 갤러리 시작*********************************************************/
+
+.content .gallery {}
+
+.content .gallery h3 {
+    text-align: left;
+    text-indent: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #b2a8a8;
+     font-family: 'Caveat', cursive;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #b2a8a8;
+}
+
+.content .gallery ul {
+    overflow: hidden;
+}
+.content .gallery ul:nth-of-type(2){
+    display: none;
+}
+.content .gallery ul li {
+    float: left;
+}
+
+.content .gallery ul li:nth-last-of-type(n) {
+    width: 50%;
+    padding: 10px;
+}
+
+.content .gallery ul li:nth-last-of-type(2n) {
+    width: 50%;
+    padding: 10px;
+}
+
+.content .gallery ul li:nth-last-of-type(n) img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.content .gallery ul li:nth-last-of-type(2n) img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.content .gallery ul li:nth-last-of-type(n) img:hover {
+    filter: none;
+    transition: .5s;
+}
+
+.content .gallery ul li:nth-last-of-type(2n) img:hover {
+    filter: none;
+    transition: .5s;
+}

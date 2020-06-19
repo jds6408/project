@@ -1,0 +1,52 @@
+{
+    "release": [
+        {
+            "cover": "images/release8.jpg",
+            "title": "Special Album [My Personas] ",
+            "name": "신승훈",
+            "date": "2020.04.08 RELEASE"
+    },
+        {
+            "cover": "images/release7.jpg",
+            "title": "2ND MINI [COLOR OF ROTHY]",
+            "name": "로시",
+            "date": "2019.05.27 RELEASE"
+    },
+        {
+            "cover": "images/release6.jpg",
+            "title": "3RD SINGLE [다 핀 꽃]",
+            "name": "로시",
+            "date": "2019.01.30 RELEASE"
+    },
+        {
+            "cover": "images/release5.jpg",
+            "title": "1ST MINI [SAHPE OF ROTHY]",
+            "name": "로시",
+            "date": "2018.08.30 RELEASE"
+    },
+        {
+            "cover": "images/release4.jpg",
+            "title": "2ND SINGLE [술래]",
+            "name": "로시",
+            "date": "2018.06.01"
+    },
+        {
+            "cover": "images/release3.jpg",
+            "title": "LIMITED EDITION VOL.1 -POLAROID",
+            "name": "신승훈",
+            "date": "2017.11.27 RELEASE"
+    },
+        {
+            "cover": "images/release2.jpg",
+            "title": "1ST SINGLE [STARS]",
+            "name": "로시",
+            "date": "2017.11.09 RELEASE"
+    },  
+        {
+            "cover": "images/release1.jpg",
+            "title": "11집 PART 1 [I AM...]",
+            "name": "신승훈",
+            "date": "2015.10.29 RELEASE"
+    }
+  ]
+}

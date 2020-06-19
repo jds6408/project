@@ -1,0 +1,282 @@
+/* CSS Document */
+#skipNav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #a8191f;
+    font-size: 12px;
+}
+
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+    display: block;
+    height: auto;
+    padding: 10px 0;
+    background: #ffedbf
+}
+
+
+
+
+/********************************************컨텐츠 시작**********************************************/
+#content {}
+
+/********************************************************채용공고/ 회사소개
+********************************************************/
+#content ul {
+    overflow: hidden;
+    text-align: left;
+    text-indent: 5%;
+    line-height: 30px;
+    font-size: 0.8em;
+}
+
+#content ul li.company {
+    width: 50%;
+    float: left;
+}
+
+#content ul li.audition {
+    width: 50%;
+    float: right;
+}
+
+#content ul li.company a {
+    display: block;
+    background-color: #f3f3f3;
+    position: relative;
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+
+#content ul li.audition a {
+    display: block;
+    color: #fff;
+    background-color: #a8191f;
+    position: relative;
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+
+#content ul li.company a i {
+    color: #a8191f;
+}
+
+#content ul li.company a i,
+#content ul li.audition a i {
+    position: absolute;
+    right: 5%;
+    top: 33%;
+}
+
+/********************************************************아티스트
+********************************************************/
+#content .artist {
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#content .artist .person1 {}
+
+#content .artist .person1 h3 {
+    color: #333;
+    font-size: 1.5em;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#content .artist .person1 h3:before {
+    content: "";
+    width: 10%;
+    height: 2px;
+    background-color: #a8191f;
+    position: absolute;
+    top: 17px;
+    left: 44.7%;
+}
+
+#content .artist .person1 div.personInfo1 {
+    margin-bottom: 30px;
+}
+
+#content .artist .person1 div.personInfo1 .infoImg {
+    position: relative
+}
+
+#content .artist .person1 div.personInfo1 .infoImg img {
+    width: 100%;
+}
+
+#content .artist .person1 div.personInfo1 div.infoTxt {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -126px;
+    width: 50%;
+    text-align: center;
+}
+
+#content .artist .person1 div.personInfo1 div.infoTxt ul {}
+
+#content .artist .person1 div.personInfo1 div.infoTxt ul {
+    font-size: 1.1em;
+}
+
+#content .artist .person1 div.personInfo1 div.infoTxt ul li:first-child {
+    display: block;
+    font-weight: 900;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #a8191f;
+}
+
+#content .artist .person1 div.personInfo1 div.infoTxt ul li {
+    padding-top: 15px;
+    text-indent: 20px;
+}
+
+#content .artist .person1 div.personInfo1 div.infoTxt ul li a {
+    display: block;
+    box-shadow: 5px 5px 5px inset rgba(0, 0, 0, 0.1);
+}
+
+#content .artist .person1 div.personInfo1 div.infoTxt ul li a i {
+    color: #a8191f;
+    text-indent: 10px;
+}
+
+/********************************************************
+새음반 발매********************************************************/
+#content .newRelease {
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#content .newRelease h3 {
+    color: #333;
+    font-size: 1.5em;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#content .newRelease h3:before {
+    content: "";
+    width: 10%;
+    height: 2px;
+    background-color: #a8191f;
+    position: absolute;
+    top: 17px;
+    left: 44.7%;
+}
+
+
+#content .newRelease .albumSlide {
+    margin-bottom: 30px
+}
+
+#content span {
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #333;
+    text-align: center
+}
+
+
+
+#content .media {
+    clear: both;
+    height: auto;
+    background: url(../images/back.jpg) repeat-y;
+    background-size: 100% auto;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+#content .media { background: url("../images/backx2.jpg") repeat-y;
+background-size: 100% auto; }
+}
+
+#content .media h3 {
+    background: rgba(255, 255, 255, 0.1);
+    color: #333;
+    font-size: 1.5em;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+#content .media h3:before {
+    content: "";
+    width: 10%;
+    height: 2px;
+    background-color: #a8191f;
+    position: absolute;
+    top: 17px;
+    left: 44.7%;
+}
+
+#content .media .media1 {
+    overflow: hidden;
+    width: 96%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+#content .media .media1 a {
+    display: block;
+}
+
+#content .media .media1 a img {
+    width: 100%;
+}
+
+#content .media .media1 .mediaTxt1 {
+    display: block;
+    padding: 5% 0;
+    text-align: center;
+}
+
+#content .media .media1 .mediaTxt1 .mediaTitle {
+    display: block;
+    font-weight: 900;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding: 20px 0;
+}
+#content .media .media1 .mediaTxt1 .tit {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 10px 0 15px;
+}
+
+#content .media .media1 .mediaTxt1 .red {
+    color: #a8191f;
+    line-height: 1.5em;
+}
+
+#content .media a.more {
+    display: block;
+    margin: 5% auto;
+    width: 30%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 700;
+    border: 1px solid #333;
+}
