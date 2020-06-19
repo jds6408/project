@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>slide_study1</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/slide.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Harry Potter Pic Slide</h1>
+    </header>
+    <section>
+    <h2 class="txt">slide part</h2>
+    <!-- 슬라이드 컨테이너 -->
+    <div class="slideshow-container">
+
+        <!-- 이미지/ 숫자 / 텍스트 -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/h1.jpg" alt="Harry Potter">
+            <div class="text">Harry Potter1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/h2.jpg" alt="Harry Potter">
+            <div class="text">Harry Potter2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/h3.jpg" alt="Harry Potter">
+            <div class="text">Harry Potter3</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/h4.jpg" alt="Harry Potter">
+            <div class="text">Harry Potter4</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/h5.jpg" alt="Harry Potter">
+            <div class="text">Harry Potter5</div>
+        </div>
+        <!-- 이전 다음 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- 동그라미  -->
+    <div class="dotWrap">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    </section>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/slide.js"></script>
+</body>
+
+</html>
