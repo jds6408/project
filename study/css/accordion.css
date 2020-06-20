@@ -1,0 +1,91 @@
+@font-face {font-family:'Gaegu-Regular'; src:url('../font/Gaegu-Regular.woff') format('woff');}
+body{
+    background: #eee;
+}
+#skipNav{
+    position: relative;
+    z-index: 999px;
+    width: 100%;
+    overflow: hidden;
+}
+#skipNav a{
+    display: block;
+    height: 5px;
+    margin-bottom: -5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: darkseagreen;
+    color: #fff;
+}
+#skipNav a:focus,
+#skipNav a:active,
+#skipNav a:hover{
+    display: block;
+    height: auto;
+    padding: 10px 0;
+}
+
+.hidden{
+    display: block;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff;
+}
+
+header{
+    height: auto;
+}
+header h1{
+    width: 300px;
+    height: 300px;
+    margin: 60px auto 30px auto;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 300px 300px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+header h1 a {
+    display: block;
+    width: 300px;
+    height: 300px; 
+}
+#page{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+.accordion{
+    padding: 30px;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.3);
+}
+.accordion li{
+    padding: 20px;
+}
+.accordion li .accordion-control{
+    background: none;
+    font: bold 2.5em "Gaegu-Regular";
+    color: #fff;
+    margin-bottom: 10px;
+}
+.accordion li .accordion-panel{
+    border-top: 2px solid #fff;
+    display: none;
+}
+.accordion li .accordion-panel p{
+    margin-top: 30px;
+    font: bold 1.5em "Gaegu-Regular";
+    color: #333;
+    line-height: 1.5em;
+}
+.accordion li .accordion-panel p em{
+    font-style: italic;
+    font-weight: 800;
+}
