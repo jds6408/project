@@ -1,0 +1,158 @@
+body {
+    font-family: 'Playball', cursive;
+}
+
+#skipNav {
+    position: relative;
+    z-index: 999px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #fff;
+    color: palevioletred;
+}
+
+#skipNav a:focus,
+#skipNav a:active,
+#skipNav a:hover {
+    height: auto;
+    display: block;
+    padding: 10px 0;
+}
+
+.hidden {
+    text-indent: -999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #fff;
+
+}
+
+header {
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+header h1:before {
+    content: "";
+    position: absolute;
+    left: 80px;
+    top: 200px;
+    width: 700px;
+    height: 3px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+}
+
+header h1 {
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    background: url(../img/beautyLogo.png) no-repeat;
+    background-size: 360px 360px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+header h1:after {
+    content: "";
+    position: absolute;
+    right: 80px;
+    top: 200px;
+    width: 700px;
+    height: 3px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+}
+
+.tabs {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tab-list {
+    overflow: hidden;
+    text-align: center;
+    font-size: 2em;
+    background-color: #fff;
+}
+
+.tab-list li {
+    float: left;
+    width: 15%;
+    padding: 10px 0;
+    background: url(../img/backgorund.jpg) repeat-x;
+    filter: brightness(70%);
+}
+
+.tab-list li a {
+    color: #333;
+}
+
+.tab-list li:hover,
+.tab-list li.active {
+    background: url(../img/backgorund.jpg);
+    filter: none;
+}
+
+.tab-list li:hover a,
+.tab-list li.active a {
+    color: #fff;
+}
+
+.tab-list li:last-of-type {
+    border-right: none;
+}
+
+.tab-panel {
+    display: none;
+    padding: 30px 30px 0;
+    overflow: hidden;
+}
+
+.tab-panel.active {
+    display: block;
+    background: url(../img/backgorund.jpg) no-repeat;
+    filter: none;
+}
+
+.tab-panel:last-of-type p {
+    font-size: 1.7em;
+    width: 80%;
+    float: left;
+}
+
+.tab-panel:first-of-type p,
+.tab-panel:nth-of-type(2) p {
+    font-size: 1.7em;
+    width: 80%;
+    float: right;
+}
+
+.tab-panel:last-of-type span {
+    display: block;
+    width: 20%;
+    float: right;
+}
+
+.tab-panel:first-of-type span,
+.tab-panel:nth-of-type(2) span {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+.tab-panel span img {
+    padding: 10px;
+}
