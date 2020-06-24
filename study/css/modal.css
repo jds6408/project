@@ -1,0 +1,85 @@
+#skipNav{
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+}
+#skipNav a{
+    display: block;
+    text-align: center;
+    height: 1px;
+    margin-bottom: -1px;
+    background-color: dimgrey;
+    color: #fff;
+    font-size: 1em;
+}
+#skipNav a:focus,
+#skipNav a:active,
+#skipNav a:hover{
+    height: auto;
+    padding: 10px 0;
+}
+.hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+    color: #fff;
+    background-color: #fff;
+}
+header{
+}
+header h1{
+    text-indent: -9999px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: url(../img/logo-2.png) no-repeat;
+    background-size: 300px 300px;
+}
+header h1 a {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+#modal-btn{
+    position: relative;
+}
+
+#modal-btn a{
+    display: block;
+    width: 150px;
+    height: 170px;
+    position: absolute;
+    top: 275px;
+    left: 50%;
+    margin-left: -75px;
+}
+@keyframes ani{
+    0%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+#modal-btn a img{
+    width: 100%;
+    animation: ani 2s alternate infinite;
+}
+#content{
+    padding: 50px 0 20px;
+}
+#content span{
+    display: block;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+#content span img{
+    width: 100%;
+    border-radius: 100%;
+}
+
