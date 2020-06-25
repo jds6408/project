@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ex5javascript</title>
+</head>
+
+<body>
+    <h1>Conditional statements</h1>
+    <h2>program</h2>
+    <script>
+        document.write("1<br>")
+        document.write("2<br>")
+        document.write("3<br>")
+        document.write("4<br>")
+    </script>
+    <h2>IF -true</h2>
+    <script>
+        document.write("1<br>")
+        if (true) {
+            document.write("2<br>")
+        } else {
+            document.write("3<br>")
+        }
+
+        document.write("4<br>")
+    </script>
+
+
+    <h2>IF -false</h2>
+    <script>
+        document.write("1<br>")
+        if (false) {
+            document.write("2<br>")
+        } else {
+            document.write("3<br>")
+        }
+
+        document.write("4<br>")
+    </script>
+    
+    <h2><a href="#">a</a></h2>
+
+
+    <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(document.querySelector('#night_day').value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color='white';
+    document.querySelector('#night_day').value = 'day';
+    }else{
+    target.style.backgroundColor = 'white';
+    target.style.color='black';
+    document.querySelector('#night_day').value = 'night';
+    }
+    ">
+
+
+
+
+
+    <input id="yellowandgreen" type="button" value="day" onclick="
+    if(document.querySelector('#yellowandgreen').value==='day'){document.querySelector('body').style.backgroundColor='yellow';
+    document.querySelector('#yellowandgreen').value = 'night'
+    }else{
+    document.querySelector('body').style.backgroundColor='green';
+    document.querySelector('body').style.color='yellow';
+     document.querySelector('#yellowandgreen').value = 'day'
+    }">
+
+
+
+
+
+
+
+
+
+    <input id="daseul" type="button" value="sky" onclick="
+if(document.querySelector('#daseul').value ==='sky'){
+document.querySelector('body').style.backgroundColor='coral';
+document.querySelector('body').style.color='powderblue';
+document.querySelector('#daseul').value ='moon';
+}else{
+document.querySelector('body').style.backgroundColor='powderblue';
+document.querySelector('body').style.color='coral';
+document.querySelector('#daseul').value ='sky';
+}
+">
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+    <input type="button" value="night" onclick="
+    if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color='white';
+    this.value = 'day';
+    }else{
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color='black';
+    this.value = 'night';
+    }
+    ">
+    <!-- this라는 키워드로 밑에 새로운 버튼을 카피해서 사용가능 !-->
+    <input type="button" value="night" onclick="
+    if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color='white';
+    this.value = 'day';
+    }else{
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color='black';
+    this.value = 'night';
+    }
+    ">
+
+
+
+
+
+
+
+
+</body>
+
+</html>
