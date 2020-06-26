@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ex11_click</title>
+</head>
+
+<body>
+    <h1>
+        02_click
+    </h1>
+
+    <div id="box1">변경전</div>
+    <input type="button" value="눌러바" onclick="aaa()" />
+                                  <!--2. 클릭을 한다
+                                      3. 함수 호출 aaa()-->
+
+
+
+    <script>
+        d = document.getElementById("box1")
+        //                          0. 객체가 무엇인지 안다
+        //                             변수 x = document에서 id가 "box1"인 객체 대입
+
+        //  1. 함수를 정의한다.
+        function aaa()   //4. 호출된 함수 실행
+        
+        
+        
+        {
+            d.innerHTML = "배고파요"
+        } //5. 변수 x의 textNode =배고파요
+
+      
+
+
+
+
+
+
+
+
+
+        /*   aaa()
+           aaa()
+           aaa()
+           aaa()*/
+   
+        
+        // 0.요구사항을 이해한다.
+        // 1.순서를 잡는다   
+        // 2.각 행위 주체를 이해한다.   이벤트소스, 이벤트리스너, 이벤트핸들러
+        
+        
+        
+    </script>
+
+
+</body>
+
+</html>

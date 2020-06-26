@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex15_input</title>
+</head>
+<body>
+    
+
+
+<h1>04_input</h1>
+
+국어<input type="text" id="kk"><br />
+영어<input type="text" id="ee"><br />
+수학<input type="text" id="mm"><br />
+총점<input type="text" id="tt" readonly><br />
+평균<input type="text" id="oo" readonly><br />
+
+
+<input type="button" onclick="res()" value="계산">
+
+
+<script>
+    kor = document.getElementById("kk")
+    eng = document.getElementById("ee")
+    mat = document.getElementById("mm")
+    
+    sum = document.getElementById('tt')
+    avg = document.getElementById('oo')
+    
+  
+    
+    
+     /*total = eval(kor.value)+eval(eng.value)+eval(mat.value)
+        avg=total/3*/ //호출시점이 어디냐에따라 안이냐 밖이냐가 달라짐
+    function res(){
+        total = eval(kor.value)+eval(eng.value)+eval(mat.value)
+        sum.value = total
+        avg.value=total/3
+        //alert(total)
+        /*alert(avg)*/
+       
+       /* opt.value = avg*/
+        
+        
+       /* alert(eval(kor.value)+eval(eng.value)+eval(mat.value))
+          alert((eval(kor.value)+eval(eng.value)+eval(mat.value))/3)*/
+    }
+    /*res()*/
+//초반에 value값 설정한 것을 최초 한번 실행시키기위해서     
+    </script>
+
+<!--1.변수 2. dom (html 태그를 가져옴 객체를 가져옴/객체안에 객체 들어올수있음=element) 3. 이벤트를 걸수있음(함수 function기반으로 부름)-->
+
+
+</body>
+</html>
