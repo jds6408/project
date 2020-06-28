@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>example 16</title>
+</head>
+
+<body>
+    <h1><a href="#">web</a></h1>
+    <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
+    <ol>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ol>
+
+    <p>
+        JavaScriptJavaScriptJavaScriptJavaScriptJavaScript<br />
+        JavaScriptJavaScriptJavaScriptJavaScriptJavaScript<br />
+        JavaScriptJavaScriptJavaScriptJavaScriptJavaScript<br />
+        JavaScriptJavaScriptJavaScriptJavaScriptJavaScript<br />
+        JavaScriptJavaScriptJavaScriptJavaScriptJavaScript<br />
+        JavaScriptJavaScriptJavaScriptJavaScriptJavaScript<br />
+        JavaScriptJavaScriptJavaScriptJavaScriptJavaScript<br />
+    </p>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+        var Links = {
+            setColor: function(color) {
+                /* var alist = document.querySelectorAll('a');
+                 for (var i = 0; i < alist.length; i++) {
+                     alist[i].style.color = color;
+                 }*/
+
+                $('a').css({
+                    color: color
+                })
+
+            }
+        }
+
+        var Body = { //1.body라고하는 변수에 객체를 담음
+            setColor: function(color) {
+                //2.property//와 property구분시 ,사용    
+                /* document.querySelector('body').style.color = color;*/
+                //객체//함수이면서 객체에소속되어있어 ==method
+                $('body').css('color', color);
+            },
+            setBackgroundColor: function(color) {
+                /* document.querySelector('body').style.backgroundColor = color;*/
+                $('body').css({
+                    backgroundColor: color
+                })
+            }
+        }
+
+
+        function nightDayHandler(self) {
+
+            var target = document.querySelector('body');
+            if (self.value === 'night') {
+                Body.setBackgroundColor('black');
+                Body.setColor('white');
+                self.value = 'day';
+                Links.setColor('powderblue');
+            } else {
+                Body.setBackgroundColor('white');
+                Body.setColor('black');
+                self.value = 'night';
+                Links.setColor('blue');
+            }
+        }
+    </script>
+</body>
+
+</html>

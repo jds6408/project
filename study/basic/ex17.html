@@ -1,0 +1,106 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>example 17</title>
+        <style>
+            #colors {
+                width: 100px;
+                height: 100px;
+                background-color: coral;
+                opacity: 45%;
+            }
+
+            .wrapper {
+                width: 700px;
+                background-color: antiquewhite;
+                height: auto;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+
+            .box1,
+            .box2,
+            .box3 {
+                width: 200px;
+                height: 50px;
+                text-align: center;
+                border: 1px solid black;
+                background-color: beige;
+                float: left;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>
+            <script>
+                var today = new Date(); //오늘 날짜를 가지고온다.
+                var hourNow = today.getHours(); //시간을알려준다.
+                var greeting; //변수를 greeting이라고 선언했다.
+
+                if (hourNow > 18) { //지금 시간이 6시가 넘었다면 변수(greeting)을 출력해줘
+                    greeting = 'Good evening!';
+                } else if (hourNow > 12) {
+                    greeting = 'Good afternoon!';
+                } else if (hourNow > 0) {
+                    greeting = 'Good morning!';
+                } else {
+                    greeting = 'Welcome!';
+                }
+                document.write(greeting); //화면에 변수(greeting)값을 출력해줘
+
+                //---------------------------------------------------------------
+            </script>
+        </h3>
+
+        <!---->
+        <div id="content">
+            <h2>커스터 명찰</h2>
+            <div id="cost">가격 :타일당 $5</div>
+
+        </div>
+        <script>
+            var price = 5;
+            var quantity = 14;
+            var total = price * quantity;
+
+            var el = document.getElementById('cost');
+            el.textContent = '$' + total;
+        </script>
+
+        <div id="colors"></div>
+        <script>
+            var colors = ['white', 'black', 'custom'];
+            var el = document.getElementById('colors');
+            el.textContent = colors[2];
+            var itemTwo = colors[1];
+
+            var friends = ['daseul', 'sangsoo', 'siyeon', 'yuyoung', 'yerin', 'eunkyung', 'youbin', 'jinhe'];
+            friendsp[5] = 'beige';
+        </script>
+
+        <div class="wrapper">
+
+
+            <script>
+                var subtotal = (13 + 1) * 5;
+                var shipping = 0.5 * (13 + 1);
+
+                var total = subtotal + shipping;
+                var ff = "<div class='box1'>"
+                var mm = "<div class='box2'>"
+                var bb = "<div class='box3'>"
+                var dd = "</div>"
+
+                document.write(ff + '소계:' + subtotal + dd);
+
+                document.write(mm + '배송비:' + shipping + dd);
+                document.write(bb + '총계:' + total + dd);
+            </script>
+        </div>
+    </body>
+
+    </html>
