@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>example 21</title>
+</head>
+
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li class="active">CSS3</li>
+        <li class="active">JavaScript</li>
+    </ol>
+    <script>
+        var li = document.querySelector('li'); //맨처음 li하나
+        li.style.color = 'darkseagreen';
+        var act = document.querySelector('.active'); //맨처음 class하나
+        act.style.color = 'coral';
+
+        var actAll = document.querySelectorAll('li');
+        for (var i = 0; i < actAll.length; i++) { // i in actAll
+            actAll[i].style.fontSize = '20px';
+        }
+    </script>
+</body>
+
+</html>
