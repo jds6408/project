@@ -1,0 +1,75 @@
+/*rotate*/
+ul {
+    overflow: hidden;
+    width: 1200px;
+    margin: 100px auto;
+}
+
+li {
+    float: left;
+    width: 25%;
+    perspective: 700px;
+    text-align: center;
+}
+
+li img {
+    width: 83px;
+    border-radius: 41.5px;
+    transform: rotateY(0deg);
+    transition: all .5s;
+}
+
+li:hover img {
+    transform: rotateY(360deg);
+}
+
+
+/*effect*/
+.grid {
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.effect {
+    float: left;
+    width: 580px;
+    height: 380px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.effect:hover {
+    filter: brightness(50%);
+}
+
+.effect img {
+    width: 600px;
+    height: 400px;
+    transform: translate3d(-10px,-10px,0);
+}
+
+.effect:hover img {
+    transition: all .5s;
+    transform: translate3d(0,0,0);
+}
+.txt{
+    color: #fff;
+}
+.txt h2{
+    transform: translate3d(50px,-200px,0);
+    transition: all .5s;
+    font-size: 1.5em;
+}
+.effect:hover .txt h2{
+    transform: translate3d(150px,-200px,0);
+    transition: all .5s;
+}
+.txt p{
+    transform: translate3d(50px,0,0);
+    transition: all .5s;
+}
+.effect:hover .txt p{
+    transform: translate3d(50px,-200px,0);
+    transition: all .5s;
+}
+
