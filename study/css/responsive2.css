@@ -1,0 +1,58 @@
+.hidden{
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    text-indent: -9999px;
+    color: #fff;
+    background-color: #fff;
+}
+#skipNav{
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+}
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+}
+#skipNav a:focus,
+#skipNav a:active,
+#skipNav a:hover{
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: darkseagreen;
+    color: #fff;
+}
+header h1{
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#content{
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+}
+.menu{
+    width: 260px;
+    float: left;
+}
+.text{
+    width: 700px;
+    float: right;
+}
+@media screen and (max-width:767px){
+    #content{
+        width: auto;
+    }
+    .menu{
+        float: none; width: auto;
+    }
+    .text{
+        float: none; width: none;
+    }
+}
+
+
+
