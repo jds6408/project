@@ -1,0 +1,37 @@
+.first,
+.second {
+    width: 1300px;
+    margin: 100px auto;
+}
+.first:after,
+.second:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.first li {
+    float: left;
+    width: 500px;
+    height: 606px;
+    margin-left: 100px;
+}
+.second li{
+    overflow: hidden;
+    float: left;
+    width: 500px;
+    height: 606px;
+    margin-left: 100px;
+}
+li img {
+    width: 550px;
+    height: 656px;
+}
+
+li:hover img {
+    transition: all .5s;
+    transform: translate3d(-10px, -10px, 0);
+}
+.second li:hover img{
+    transition: all .5s;
+    transform: translate3d(-30px, 0, 0);
+}
