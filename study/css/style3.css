@@ -1,0 +1,32 @@
+.dropdown{
+    width: 800px;
+    margin: 0 auto;
+    background-color: powderblue;
+    padding: 50px 0 100px;
+}
+
+.dropBtn{
+    background-color: skyblue;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    margin-left: -51px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.dropdown-content{
+    text-align: center;
+    padding: 5px;
+    display: none;
+    position: relative;
+    z-index: 9;
+}
+li{
+    margin: 0 auto;
+    width: 102.98px;
+    border-bottom: 1px solid gold;
+    
+}
+.dropBtn:hover .dropdown-content{
+    display: block;
+}
