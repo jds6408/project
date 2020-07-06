@@ -1,7 +1,7 @@
 .dropdown{
     width: 800px;
-    margin: 0 auto;
-    background-color: powderblue;
+    margin: 0 auto;/*
+    background-color: powderblue;*/
     padding: 50px 0 100px;
 }
 
@@ -9,6 +9,7 @@
     background-color: skyblue;
     color: #fff;
     position: relative;
+    z-index: 9;
     left: 50%;
     margin-left: -51px;
     padding: 10px;
@@ -16,10 +17,10 @@
 }
 .dropdown-content{
     text-align: center;
-    padding: 5px;
+    /*padding: 5px;*/
     display: none;
     position: relative;
-    z-index: 9;
+    transform: translate3d(0,-100px,0);
 }
 li{
     margin: 0 auto;
@@ -27,6 +28,12 @@ li{
     border-bottom: 1px solid gold;
     
 }
-.dropBtn:hover .dropdown-content{
+.dropBtn:hover + .dropdown-content{
     display: block;
+    transform: translate3d(0,0,0);
+}
+.dropdown-content:hover{
+    display: block;
+    transition: all .5s;
+    transform: translate3d(0,0,0);
 }
