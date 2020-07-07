@@ -48,13 +48,15 @@
 }
 .btn_wrap .company_btn_wrap .btn.active{
     background-color: #a8191f;
-    color: #fff;
 }
 .btn_wrap .company_btn_wrap .btn:hover{
     background-color:#a8191f;
     color:#fff
 }
 .btn_wrap .company_btn_wrap .btn:hover a {
+    color: #fff;
+}
+.btn_wrap .company_btn_wrap .btn.active a{
     color: #fff;
 }
 .btn_wrap .company_btn_wrap .btn:nth-child(2){
