@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>btn</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/btn.js"></script>
 </head>
+
 <body>
-    
+    <div class="container" onclick="togg()">
+        <div id="ham" class="bar1"></div>
+        <div id="ham" class="bar2"></div>
+        <div id="ham" class="bar3"></div>
+    </div>
+    <script>
+        function togg() {
+            var x = document.getElementById('ham');
+            if (x.className == "bar1") {
+                x.addClass = 'change';
+            } else {
+                x.removeClass = "change"
+            }
+        }
+    </script>
 </body>
+
 </html>
