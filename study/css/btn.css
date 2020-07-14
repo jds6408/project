@@ -31,7 +31,28 @@
 .change.bar3{
     transform: rotate(-45deg) translateX(7px) translateY(-28px);
 }
-
-
+.menu{
+    width: 50%;
+    background-color: darkseagreen;
+    color: #fff;
+    position: relative;
+    left: -5000px;
+}
+.menu.act{
+    left: 0px;
+    transition: .5s;
+}
+.menu ul{
+    text-align: center;
+    font-size: 1.5em;
+}
+.menu ul li{
+    padding: 10px 0;
+    border-bottom: 2px solid #fff;
+}
+.menu ul li:hover{
+    color: darkseagreen;
+    background-color: #fff;
+}
 
 
