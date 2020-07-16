@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html/css question</title>
+</head>
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    /*여백없이 화면을 가득 채우는 박스*/
+    #list {
+        margin-top: 5px;
+    }
+
+    fieldset {
+        overflow: hidden;
+    }
+
+    label {
+        width: 50px;
+        height: 30px;
+        float: left;
+        display: block;
+    }
+
+    input[type=checkbox] {
+        width: 30px;
+        display: none;
+    }
+
+    input[type="checkbox"]:checked+.styleSec {
+        background: url(img/check2.png) no-repeat;
+    }
+
+    .styleSec {
+        display: block;
+        width: 30px;
+        background: url(img/check.png) no-repeat;
+        cursor: pointer;
+
+    }
+
+    .txt {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .model {
+        margin-top: 100px;
+    }
+
+    .model div {
+        border: 1px solid red;
+        box-sizing: border-box;
+    }
+
+    .model div:first-of-type {
+        display: block;
+    }
+
+    .model div:nth-of-type(2) {
+        display: inline-block;
+    }
+
+    .model div:last-of-type {
+        display: inline;
+    }
+
+    .float-ex {
+        margin-top: 100px;
+    }
+
+    .float-ex img {
+        float: left;
+        width: 50%;
+        height: 500px;
+    }
+
+    .float-ex p {
+        float: right;
+    }
+
+    .float-ex:after {
+        content: "";
+        display: block;
+        float: none;
+        clear: both;
+    }
+    .back-ex{
+        margin-top: 100px;
+        width: 100%;
+        height: 800px;
+        background: url(img/h3.jpg) no-repeat;
+        background-attachment: fixed;
+    }
+    .triple{
+        margin-top: 100px;
+        width: 100%;
+        height: 500px;
+        background: url(img/hobbang1.png) 10% center no-repeat, url(img/hobbang2.png) 90% center no-repeat, url(img/h4.jpg) no-repeat 
+    }
+</style>
+
+<body>
+    <form action="">
+        <fieldset>
+            <label for="" id="list">취미</label>
+            <input type="checkbox" value="read" id="hobby1" name="hobby">
+            <label for="hobby1" class="styleSec"></label>
+            <label for="hobby1" class="txt">독서</label>
+        </fieldset>
+    </form>
+
+    <div class="model">
+        <div>block</div>
+        <div>inline</div>
+        <div>inline-block</div>
+    </div>
+
+
+    <div class="float-ex"><img src="img/h1.jpg" alt="예시1">
+        <!--<img src="img/h2.jpg" alt="예시2">
+    <img src="img/h3.jpg" alt="예시3"><img src="img/h4.jpg" alt="예시4">-->
+        <p>가상클래스를 통해 float해지 </p>
+
+    </div>
+    <div>
+        <p style="border:1px solid red">가상클래스를 통해 float 해지</p>
+    </div>
+    
+    <div class="back-ex">
+        
+    </div>
+    
+    <div class="triple">
+
+   
+    </div>
+
+</body>
+
+</html>
