@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>study</title>
+</head>
+
+<body>
+    <script>
+        var a = 66;
+        var b = 88;
+        var c = 99;
+        var sum = a + b + c;
+        var avg = sum / 3;
+        document.write(a + '+' + b + '+' + c + '=' + sum + ',' + avg);
+        if (avg >= 80) {
+            document.write('<br>축하합니다 평균이 팔십점 이상입니다.');
+        }
+        //alert(avg >= 80);
+    </script>
+
+
+    <script>
+        var sum = 0;
+        for (var i = 0; i <= 100; i++) {
+            sum += i;
+        }
+        document.write('<br>' + sum);
+    </script>
+
+    <script>
+        var evenSum = 0;
+        var oddSum = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                evenSum += i;
+            } else {
+                oddSum += i;
+            }
+        }
+
+        document.write('<br>' + evenSum + '<br>' + oddSum);
+    </script>
+
+    <script>
+        for (var gugu = 2; gugu <= 9; gugu++) {
+            for (var dan = 1; dan <= 9; dan++) {
+                document.write('<br>' + gugu + '*' + dan + '=' + gugu * dan);
+            }
+        }
+    </script>
+    <script>
+        function a(x, y, z) {
+            var sum = x * y + z;
+            document.write("<br>" + sum);
+            return;
+        }
+
+        a(10, 23, 65);
+    </script>
+    <script>
+        var ev = eval("1+1");
+        document.write("<br>" + ev);
+        var num = parseInt(100.1);
+        document.write("<br>" + num);
+
+        var num2 = 55;
+        if (num2 == isNaN) {
+            document.write("<br>숫자가 아닙니다");
+        } else {
+            document.write("<br>숫자입니다");
+        }
+        var e = parseInt("World")
+        var k = parseInt("Hello");
+        k + 100
+        var c = k + "world";
+        document.write("<br>" + c);
+
+        document.write("<br>" + k);
+    </script>
+    <script>
+        /*var height = prompt("cm단위의 숫자만 입력하세요","");
+        if(isNaN(height)||height==""||!height){ //!height 빈칸으로 제출시 넘어감
+           alert("올바른 입력값이 아닙니다.");
+        }*/
+        /*var hello =confirm('확인 대화상자입니다');
+        if(hello){
+            alert("hello world");
+        }else{
+            alert("bye world");
+        }*/
+    </script>
+    <br>
+    <input type="button" onclick="inside()" value="click">
+    <span id="inner"></span>
+    <script>
+        function inside() {
+            var a = "hello World"
+            document.getElementById('inner').innerHTML = a;
+        }
+    </script>
+    <script>
+        var example = {}; //빈객체 만들기
+
+        example.num1 = 100;
+        example.num3 = 100; //객체 안에 프로퍼티 정의
+
+        example.sum = function() {
+            return this.num1 * this.num3;
+        } //객체 안에 함수 만들기
+
+        var result = example.sum(); // 변수에 함수 return값 
+        document.write("<br>" + result); //print
+    </script>
+    <script>
+        function hello() {
+            document.write('<br>안녕하세요');
+        }
+        var world = hello;
+        world();
+
+        var world = function() {
+            document.write('<br>안녕하세요');
+        }
+        world();
+    </script>
+    <script>
+        var url = "http://www.naver.com/index.html";
+        var p1 = url.indexOf("://"); /*url.substring(7,20);*/
+        var p2 = url.lastIndexOf("/");
+        var p3 = url.substring(p1 + 3, p2);
+        document.write("<br>"+p3);
+    </script>
+
+    <script>
+        var na = [88, 77, 99, 55];
+        na.sort(function(a,b){
+            return a-b;
+        });
+        document.write("<br>"+na);
+        var me =['하하','박명수','유재석','정형돈','정준하'];
+        me.sort();
+        document.write("<br>"+me);
+        
+        
+    </script>
+
+</body>
+
+</html>
