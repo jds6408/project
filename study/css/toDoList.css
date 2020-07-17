@@ -1,0 +1,50 @@
+
+.list-box{
+    width: 1000px;margin: 0 auto;background-color: #fff; margin-top: 100px;
+    padding: 30px;color: darkseagreen;
+}
+.list-box h1{
+    text-align: center;font-weight: bold;font-style: italic;border-bottom: 2px solid darkseagreen;
+}
+.write-box{
+    overflow: hidden;
+}
+.write-box input[type="text"]{
+    width: 70%;padding: 10px 0;float: left;border-right: 1px solid darkseagreen; box-sizing: border-box;
+}
+.write-box button[type="button"]{
+    width: 30%;padding: 5px 0; float: right;box-sizing: border-box;font-size: 1.2em;cursor: pointer;
+}
+.list-table{
+    width: 100%;
+}
+thead{
+    background-color: darkseagreen;color: #fff;
+}
+tr th:first-of-type,tr td:first-of-type{
+    width: 10%;text-align: center;padding: 10px 0;
+}
+tr th:last-of-type, tr td:last-of-type{
+    width: 90%;text-align: left; padding: 10px 0;
+}
+tr td:last-of-type{
+    display: block;
+}
+.btn-area{
+    width: 90%;margin: 50px auto;
+}
+.btn-area button{
+    width: 20%;padding: 10px 0;cursor: pointer;
+}
+.btn-area button:first-of-type{
+    margin-left: 15%;
+}
+.btn-area button:last-of-type{
+    margin-right: 15%;
+}
+
+
+
+
+
+

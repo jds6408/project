@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>study-17</title>
+</head>
+
+<body>
+    <script>
+        var naming = ['정', '오', '다', '상', '슬', '수'];
+        var show = naming.sort();
+        document.write(show + "<br>");
+
+        var numbering = [99, 55, 88, 44, 33, 85, 63, 22, 47];
+
+        numbering.sort();
+        document.write(numbering + "<br>");
+
+        var numberAnother = [46, 23, 95, 15, 87, 36, 47, 69, 55];
+
+        numberAnother.sort(function(a, b) {
+            return b - a; //내림차순
+        })
+        document.write(numberAnother + "<br>");
+    </script>
+
+    <script>
+        var a = 1.6356;
+        //Math.round(a);
+        var result = Math.round(a * 1000) / 1000; //몇번째 자리를 반올림하고 싶은지
+
+        document.write(result + "<br>");
+
+        var b = 223.2566;
+        b = b.toFixed(3);
+        document.write(b + "<br>");
+    </script>
+
+    <script>
+        //랜덤인증번호 //
+        var auth = "";
+        for (var i = 0; i < 5; i++) {
+            auth += Math.floor(Math.random() * 9);
+        }
+        document.write(auth + "<br>");
+    </script>
+    <script>
+        //0부터 9까지 (*10) 랜덤    
+
+        var auth = "";
+        auth += Math.floor(Math.random(0, 9) * 10);
+        document.write(auth + "<br>");
+    </script>
+    <script>
+        var a = new Date();
+        a.getFullYear.getMonth;
+        var b = new Date();
+        b.setFullYear(2019);
+        b.setMonth(9);
+        //document.write(a+','+b);   
+
+        document.write(Math.floor(a, b) + "<br>");
+        document.write(Math.ceil(b) + "<br>");
+    </script>
+    <script>
+        //window.open('ex1.html');
+        // window.open('ex1.html', 'mywin', 'width=500, height=300, scrollbars=no, toolbars=no, menubar=no, status=no, location=no');
+        //window(self).close();
+    </script>
+    <script>
+        var az;
+        var bz = null;
+
+
+        document.write(az + "," + bz + "<br>");
+        var typeNum = 100;
+        var typeStr = "Hello";
+        var typeBoo = true;
+        var typeUnde;
+        var typeNull = null;
+        console.log(typeNum + ' => ' + typeof typeNum); //number
+        console.log(typeStr + ' => ' + typeof typeStr); //string
+        console.log(typeBoo + ' => ' + typeof typeBoo); //boolean
+        console.log(typeUnde + ' => ' + typeof typeUnde); //undefined
+        console.log(typeNull + ' => ' + typeof typeNull); //object
+
+    </script>
+</body>
+
+</html>
