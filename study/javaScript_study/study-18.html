@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>study-18</title>
+</head>
+
+<body>
+    <button type="button" onclick="go()">네이버 가기</button>
+    <div id="imgin">
+    </div>
+    <img id="imgs" src="../img/h5.jpg" alt="해리포터사진">
+    <br>
+    <input id="texts" type="text" value="텍스트">
+    <br>
+    <form action="" name="oh">
+        <input type="radio" name="r" id="radio1" value="라디오1">라디오1
+        <input type="radio" name="r" id="radio2" value="라디오2">라디오2
+        <input type="radio" name="r" id="radio3" value="라디오3">라디오3
+        <br>
+        <select name="s1" id="s11">
+            <option value="s11">1-1</option>
+            <option value="s11">1-2</option>
+            <option value="s11">1-3</option>
+        </select>
+        <input type="reset">리셋하기
+    </form>
+
+    <script>
+        //var url = location.href; //현재 주소
+        //alert(url);
+        function go() {
+            var url = "http://www.naver.com"
+            //window.location = url;
+
+            var agent = navigator.userAgent;
+            console.log(agent);
+        }
+    </script>
+
+    <script>
+        function set() {
+            setInterval(function() {
+                var body = document.querySelector('body');
+                body.style.backgroundColor = 'darkseagreen';
+            }, 8000);
+        }
+        //set();
+    </script>
+    <script>
+        var img = document.getElementById('imgin');
+        var imgMaking = document.createElement('img');
+        imgMaking.setAttribute('src', '../img/animation-img.png');
+
+        img.appendChild(imgMaking);
+    </script>
+    <script>
+        var imgs = document.getElementById('imgs');
+        //console.log(imgCh);
+        /*  var imgCh = imgs.src;
+        console.log(imgCh);
+        */
+        imgs.setAttribute('src', '../img/h3.jpg');
+        imgs.style.width = "1000px";
+    </script>
+    <script>
+        var textx = document.getElementById('texts')
+        textx.value = "메롱";
+        textx.setAttribute("name", "롱메");
+    </script>
+
+    <script>
+        //var oh = document.oh.r; // form name 과 input name
+        //alert(oh);
+        var sel = document.oh.s1;
+        //sel.selectedIndex = 2; // select option강제 설정
+
+
+        var choice = sel.selectedIndex;
+        console.log(choice); //현재 선택된 요소의 위치
+
+        var choiceVal = sel[2].value;
+        console.log(choiceVal); //현재 선택된 요소의 value값
+
+        if (sel.selectedIndex == 0) { //주로 첫 번째 <option>요소는 선택을 요구하기 위한 안내문이 표시되는 경우가 많기 때문에 selectedIndex값이 0인 경우는 선택한 것으로 간주하지 않는다.
+            //alert('삐용');
+        }
+
+
+        document.oh.r[0].checked = "true"
+        //alert(namings);
+        /* if(namings.checked == "true"){
+             alert('축하해요');
+         }else{
+             alert('다른 것을 선택해주세요');
+         }*/
+        var radio = document.oh.r;
+        var count = 1;
+
+        for (var i = 0; i < radio.length; i++) {
+            if (radio[i].checked) {
+                count++;
+                console.log(count);
+            }
+        }
+    </script>
+
+    <script>
+        var reset = document.oh.reset(); // submit도 같음 
+      //var submit = document.oh.submit();
+    </script>
+
+</body>
+
+</html>
