@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>study-1</title>
+</head>
+
+<body>
+    <h1 id="hel">안녕하세요</h1>
+    <h2 id="hel2">안녕하세요 2</h2>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#hel').html('방가워요');
+            var hel2 = $('#hel2').html();
+            console.log(hel2);
+        });
+    </script>
+    <script>
+        var my_height = 160;
+        var json = {
+            name: '정다슬',
+            age: 24,
+            height: my_height
+        };
+        console.log(json.name);
+        console.log(json.age);
+        console.log(json.height);
+
+
+        var daseul = {
+            name: '정다슬',
+            birth: 1997 + '.' + 01 + '.' + 03,
+            subject: ['html', 'css3', 'javaScript', 'jquery'],
+            plus: json // json.age
+        };
+        document.write(daseul.subject[3] + "<br>");
+        for (var i = 0; i < daseul.subject.length; i++) {
+            document.write(daseul.subject[i] + "&nbsp");
+        }
+
+        document.write(daseul.plus.age); //daseul.plus == 24
+
+        //json 배열에 들어가는 경우 //축약 
+        var books = [{
+                subject: "html입문",
+                price: '32000'
+            },
+            {
+                subject: "CSS활용",
+                price: '28000'
+            },
+            {
+                subject: "jQuery실무",
+                price: '47000'
+            }
+        ];
+        //다른 json배열에 들어갈 수 있음
+        var library = {
+            name: '강남도서관',
+            address: '서울시 강남구...',
+            open: '오전 9시',
+            close: '오후 6시',
+            book_list: [{
+                    subject: "html입문",
+                    price: '32000'
+                },
+                {
+                    subject: "CSS활용",
+                    price: '28000'
+                },
+                {
+                    subject: "jQuery실무",
+                    price: '47000'
+                }
+            ]
+        };
+    </script>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <script>
+        $(document).ready(function() {
+            $(".box").mouseenter(function() {
+                //alert('안녕하세요');
+            })
+            $(".box").mouseover(function() {
+                //alert('안녕히가세요');
+            })
+
+        })
+        $(function() {
+            $('.box').hover(
+                function() {
+                    //alert('안녕?');
+                },
+                function() {
+                    //alert('잘가');
+                }
+            )
+        })
+    </script>
+    <input id="key" type="text" placeholder="keycode를 알아보아요">
+    <script>
+    
+        $(document).ready(function(){
+            $("#key").keyup(function(e){
+              console.log(e.keyCode);  
+                if(e.keyCode == 13){
+                    alert('엔터를 누르셨군요?');
+                }
+            })
+        })
+    
+    </script>
+    <script>
+        
+        var height = window.pageYOffset //=== window.scrollY;
+        
+        console.log(height);
+        
+    </script>
+
+</body>
+
+</html>
