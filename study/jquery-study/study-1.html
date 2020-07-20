@@ -9,6 +9,15 @@
 <body>
     <h1 id="hel">안녕하세요</h1>
     <h2 id="hel2">안녕하세요 2</h2>
+
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
+
+    <input id="key" type="text" placeholder="keycode를 알아보아요">
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/jquery-migrate-1.4.1.min.js"></script>
     <script>
@@ -78,12 +87,6 @@
             ]
         };
     </script>
-    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
-    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
-    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
-    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
-    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
-    <div class="box" style="width:200px; height:200px; background-color: red; "></div>
     <script>
         $(document).ready(function() {
             $(".box").mouseenter(function() {
@@ -105,25 +108,66 @@
             )
         })
     </script>
-    <input id="key" type="text" placeholder="keycode를 알아보아요">
+
     <script>
-    
-        $(document).ready(function(){
-            $("#key").keyup(function(e){
-              console.log(e.keyCode);  
-                if(e.keyCode == 13){
+        $(document).ready(function() {
+            $("#key").keyup(function(e) {
+                console.log(e.keyCode);
+                if (e.keyCode == 13) {
                     alert('엔터를 누르셨군요?');
                 }
             })
         })
-    
     </script>
     <script>
-        
-        var height = window.pageYOffset //=== window.scrollY;
-        
-        console.log(height);
-        
+        window.addEventListener('scroll', function() {
+            //var hei = window.pageYOffset //=== window.scrollY;
+            //var wiii = window.pageXOffset;
+            var wi = window.width; //undefined; 이제 사용안함 ddd로 사용해야함 
+            var wid = window.innerWidth;
+            var widd = window.outerWidth;
+            var ddd = document.body.clientWidth;
+            console.log(wi + "," + wid + "," + widd + "," + ddd);
+        })
+    </script>
+    <script>
+        var ee = $(document).height();
+
+        //var hhh = $(window).width();
+        var scroll = $(window).scrollTop();
+        document.write(ee + "," + scroll);
+    </script>
+
+    <script>
+        function responsive() {
+            var ww = $(window).width();
+            //현재 창의넓이
+            //document.write(ww);
+
+            if (ww <= 800) {
+                alert('넓이가 800이다');
+            }
+
+        };
+        $(function() {
+            //브라우저가 열린 직후
+            responsive();
+
+            $(window).resize(function() {
+                //창 크기가 변경될 경우
+                responsive();
+            })
+        })
+    </script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                    alert('wow');
+                }
+            })
+
+        })
     </script>
 
 </body>

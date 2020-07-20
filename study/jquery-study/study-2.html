@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>study-1</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .active {
+            background-color: pink;
+            color: #fff;
+        }
+
+        .box {
+            width: 100px;
+            height: 30px;
+            background-color: pink;
+
+        }
+
+        .txt {
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+            color: #fff;
+        }
+    </style>
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <a href="javscript:void(0)">0</a>
+        <div id="hello">1</div>
+        <div class="hello" data-type="안녕하세요">2</div>
+    </div>
+    <button class="btn" data-value="1">btn1</button>
+    <button class="btn" data-value="2">btn2</button>
+    <button class="btn" data-value="3">btn3</button>
+    <div class="box"></div>
+    <div class="txt">안냐세오</div>
+
+    <script>
+        var idx = $('#hello').index();
+        document.write("#hello의 인덱스 index() 넘버는 ?" + idx);
+
+        /*var foo = $('.hello').data();
+        
+        $('.hello').removeData('type');*/
+        $(".btn").on("click", function() {
+            $(this).addClass('active');
+            $('.btn').not(this).removeClass('active');
+        })
+
+
+        /*$('.btn:first-of-type').on("click",function(){
+            $('.box').hide();
+        })
+        $('.btn:last-of-type').on("click",function(){
+            $('.box').show();
+        })
+        $('.btn:nth-of-type(2)').on("click",function(){
+            $('.box').toggle();
+        })*/
+
+        document.write()
+        $('.box').on("click", function() {
+            $('.txt').slideToggle(3000);
+            
+           
+        })
+    </script>
+    <!--<script>
+        const btn = document.querySelectorAll('.btn');
+        btn.addEventListener("click", event());
+        
+        function event(){
+            btn.classList.add('active');
+        }
+    </script>-->
+
+
+</body>
+
+</html>
