@@ -1,0 +1,7 @@
+h1{
+    color: darkseagreen;
+    transition: all .5s;
+}
+.clicked{
+    color: coral;
+}
