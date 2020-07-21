@@ -7,6 +7,7 @@
 </head>
 
 <body>
+    <h1 id="title">how could i figure that out!</h1>
     <button type="button" onclick="go()">네이버 가기</button>
     <div id="imgin">
     </div>
@@ -108,7 +109,75 @@
 
     <script>
         var reset = document.oh.reset(); // submit도 같음 
-      //var submit = document.oh.submit();
+        //var submit = document.oh.submit();
+
+        const calculator = {
+            plus: function(a, b) {
+                return a + b;
+            },
+            minus: function(a, b) {
+                return a - b;
+            },
+            gob: function(a, b) {
+                return a * b;
+            },
+            jaegob: function(a, b) {
+                return a ** b;
+            }
+        }
+        //                 객체.함수(인자,인자)
+        //              console.log(plus);
+        const plus = calculator.plus(5, 5);
+        const minus = calculator.minus(10, 5);
+        const gob = calculator.gob(6, 6);
+        const jaegob = calculator.jaegob(7, 8);
+
+        console.log(`${plus} ${minus} ${gob} ${jaegob}`);
+
+        const title = document.querySelector('#title');
+        console.log(title);
+        title.innerHTML = "I couldn't thinking that is simple thing"
+        document.title = "hello javascript";
+
+        function handleResize() {
+            console.log('i have been resized')
+        }
+
+        window.addEventListener('resize', handleResize)
+        //handleResize() --지금 당장 작동해라 resize를 하지 않았는데 이미 함수발행 ()안하면 함수가 바로 실행되지않고 resize될 경우 함수가 실행됨.
+
+
+        //const baseColor = "#34495e";
+
+        
+        
+        title.style.color = "lightblue";
+        function handleClick() { //클릭시 색상 바꾸게 해주는것
+            
+            /*console.log(currentColor);*/
+            
+            
+            
+            if(title.style.color ==="lightblue"){
+                title.style.color ="darkseagreen";
+            }else{
+                title.style.color = "lightblue";
+            }   
+        }
+
+        window.addEventListener("click",handleClick);
+        /*function init() { //초기화시켜주는 함수
+            title.style.color = "lightblue";
+            title.addEventListener("click", handleClick)
+
+        }
+        init();*/
+        
+        function handelOffline(){
+            console.log("byebye");
+        }
+        window.addEventListener("online", handelOffline);
+        
     </script>
 
 </body>
