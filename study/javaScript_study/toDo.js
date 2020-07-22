@@ -4,12 +4,20 @@ const toDoform = document.querySelector('.js-toDoForm'),
 
 const TODOS_LS = "toDos";
 
-const toDos = [];
+let toDos = [];
 
-function delToDo(e){
-    const btn =e.target;
+function delToDo(e) {
+    const btn = e.target;
     const li = btn.parentNode;
     toDoList.removeChild(li);
+    const cleanToDos = toDos.filter(function (toDo) {
+
+
+        return toDo.id !== parseInt(li.id);
+    });
+    //console.log(cleanToDos);
+    toDos = cleanToDos;
+    saveToDos();
 }
 
 function saveToDos() {
@@ -55,7 +63,7 @@ function loadToDos() {
         //console.log(loadedToDos);
         const parsedToDos = JSON.parse(loadedToDos);
         //console.log(parsedToDos); //object됨
-        parsedToDos.forEach(function(toDo) { //array 
+        parsedToDos.forEach(function (toDo) { //array 
             //console.log(toDo.text);
             paintToDo(toDo.text);
         })
