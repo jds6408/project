@@ -21,9 +21,9 @@ function handleSubmit(event) {
 function askForName() {
     form.classList.add(SHOWING);
     form.addEventListener("submit", handleSubmit);
-    
+
     //폼을 보이고, 제출할 때 이벤트 발생하는 handlesubmit함수발생
-    
+
 }
 
 
@@ -31,16 +31,16 @@ function paintGreeting(text) {
     form.classList.remove(SHOWING);
     greeting.classList.add(SHOWING);
     greeting.innerText = `Hello ${text}`;
-    
+
     //  폼에 보여지는 클래스는 없어지고, 환영하는 문구 보여지는 클래스 추가하고 그 안에 텍스트를 아큐멘트를 받아서 작성
-    
-    
+
+
 }
 
 function loadName() {
     //로컬스토리지 가지고오는 거 
 
-    const currentUser = localStorage.getItem(USER_LS); 
+    const currentUser = localStorage.getItem(USER_LS);
     //로컬스토로지에 있지 않는 값은 null로 지정
     if (currentUser === null) {
         //유저네임을 등록하고 있지 않을 때

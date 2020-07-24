@@ -102,7 +102,7 @@ slideBtnPrev.addEventListener("click", function () {
 // next Btn Slide//
 
 //ul inside li making//
-for (let li = 1; li <= slideLen; li++) {
+/*for (let li = 1; li <= slideLen; li++) {
 
     const liMake = document.createElement('li');
     //console.log(li); li *5
@@ -112,6 +112,7 @@ for (let li = 1; li <= slideLen; li++) {
     liMake.setAttribute("data-num", li);
     pageBtn.append(liMake);
 }
+*/
 //ul inside li making//
 
 /*

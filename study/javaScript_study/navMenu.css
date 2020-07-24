@@ -1,0 +1,13 @@
+/*float해제*/
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.clearfix div {
+    float: left;
+}
+.clearfix ul {
+    float: left;
+}
