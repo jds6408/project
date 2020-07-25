@@ -8,6 +8,53 @@
 .clearfix div {
     float: left;
 }
+
 .clearfix ul {
     float: left;
+    position: relative;
+    left: -999px;
+    background: darkolivegreen;
+}
+
+/*버튼*/
+.clearfix a.open {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    font-size: 3em;
+}
+
+.clearfix a.close {
+    position: absolute;
+    left: 300px;
+    top: 60px;
+    display: none;
+}
+
+.clearfix a.close i {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: red;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+/*메뉴들*/
+.clearfix ul li {
+    text-align: center;
+}
+
+.clearfix ul li h3>a {
+    display: block;
+    font-size: 2em;
+    color: #fff;
+    padding: 70px;
+}
+
+.clearfix ul li h3>a:hover,
+.clearfix ul li h3>a:active {
+    background-color: #fff;
+    color: darkolivegreen;
 }
