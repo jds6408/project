@@ -1,0 +1,41 @@
+.tab_wrap {
+    width: 80%;
+    margin: 100px auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.tab_list {
+    float: left;
+    width: 20%;
+    background-color: darkseagreen;
+}
+.active{
+    background-color: #fff;
+}
+.tab_list.active a{
+    color: darkseagreen;
+}
+.tab_list a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+}
+.tab_container{
+    padding: 10px;
+}
+.tab_container .tab_content{
+    line-height: 1.5em;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: darkseagreen;
+    display: none;
+}
+.tab_container .tab_content:first-child{
+    display: block;
+}
