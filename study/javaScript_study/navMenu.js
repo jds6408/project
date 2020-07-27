@@ -14,16 +14,20 @@ MenuHeight.style.height = docH + "px";
 function changeBtn() {
     MenuHeight.style.left = 0;
     MenuHeight.style.transition = "all .3s linear";
-    btnOpen.style.display = "none";
-    btnClose.style.display = "block";
+    btnOpen.style.opacity = 0;
+    btnClose.style.opacity = 1;
+    btnOpen.style.transition = "all .3s linear";
+    btnClose.style.transition = "all .3s linear";
 
 }
 
 function closeBtn() {
     MenuHeight.style.left = "-999px";
     MenuHeight.style.transition = "all .3s linear";
-    btnOpen.style.display = "block";
-    btnClose.style.display = "none";
+    btnOpen.style.opacity = 1;
+    btnClose.style.opacity = 0;
+    btnOpen.style.transition = "all .3s linear";
+    btnClose.style.transition = "all .3s linear";
 }
 
 btnOpen.addEventListener("click", changeBtn);
