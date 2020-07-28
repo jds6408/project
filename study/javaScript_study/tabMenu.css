@@ -12,10 +12,8 @@
     width: 20%;
     background-color: darkseagreen;
 }
-.active{
+.tab_list a.active{
     background-color: #fff;
-}
-.tab_list.active a{
     color: darkseagreen;
 }
 .tab_list a {
