@@ -42,7 +42,7 @@
 
     <script>
         function set() {
-            setInterval(function() {
+            setInterval(function () {
                 var body = document.querySelector('body');
                 body.style.backgroundColor = 'darkseagreen';
             }, 8000);
@@ -84,7 +84,8 @@
         var choiceVal = sel[2].value;
         console.log(choiceVal); //현재 선택된 요소의 value값
 
-        if (sel.selectedIndex == 0) { //주로 첫 번째 <option>요소는 선택을 요구하기 위한 안내문이 표시되는 경우가 많기 때문에 selectedIndex값이 0인 경우는 선택한 것으로 간주하지 않는다.
+        if (sel.selectedIndex ==
+            0) { //주로 첫 번째 <option>요소는 선택을 요구하기 위한 안내문이 표시되는 경우가 많기 때문에 selectedIndex값이 0인 경우는 선택한 것으로 간주하지 않는다.
             //alert('삐용');
         }
 
@@ -112,16 +113,16 @@
         //var submit = document.oh.submit();
 
         const calculator = {
-            plus: function(a, b) {
+            plus: function (a, b) {
                 return a + b;
             },
-            minus: function(a, b) {
+            minus: function (a, b) {
                 return a - b;
             },
-            gob: function(a, b) {
+            gob: function (a, b) {
                 return a * b;
             },
-            jaegob: function(a, b) {
+            jaegob: function (a, b) {
                 return a ** b;
             }
         }
@@ -149,35 +150,35 @@
 
         //const baseColor = "#34495e";
 
-        
-        
+
+
         title.style.color = "lightblue";
+
         function handleClick() { //클릭시 색상 바꾸게 해주는것
-            
+
             /*console.log(currentColor);*/
-            
-            
-            
-            if(title.style.color ==="lightblue"){
-                title.style.color ="darkseagreen";
-            }else{
+
+
+
+            if (title.style.color === "lightblue") {
+                title.style.color = "darkseagreen";
+            } else {
                 title.style.color = "lightblue";
-            }   
+            }
         }
 
-        window.addEventListener("click",handleClick);
+        window.addEventListener("click", handleClick);
         /*function init() { //초기화시켜주는 함수
             title.style.color = "lightblue";
             title.addEventListener("click", handleClick)
 
         }
         init();*/
-        
-        function handelOffline(){
+
+        function handelOffline() {
             console.log("byebye");
         }
         window.addEventListener("online", handelOffline);
-        
     </script>
 
 </body>

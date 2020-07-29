@@ -1,0 +1,67 @@
+header {
+    width: 100%;
+    height: auto;
+}
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+h1 {
+    text-indent: -9999px;
+    padding: 10px;
+}
+
+h1 a {
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: url(../../img/logo-2.png) center no-repeat;
+    background-size: 120px 120px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 10px;
+    background-color: rebeccapurple;
+}
+
+nav ul.drop_down_menu {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+ul.drop_down_menu::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu {
+    border: 1px solid red;
+    float: left;
+    width: 25%;
+    height: 50px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    padding:10px;
+}
+.depth{
+    margin-top: 40px;
+    width: 100%;
+    border: 1px solid red;
+    display: none;
+}
+.depth li {
+    line-height: 3em;
+}
+.depth li a{
+    display: block;
+    padding: 10px;
+}
