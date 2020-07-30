@@ -26,7 +26,6 @@ h1 a {
 
 nav {
     padding: 10px;
-    background-color: rebeccapurple;
 }
 
 nav ul.drop_down_menu {
@@ -43,7 +42,6 @@ ul.drop_down_menu::after {
 }
 
 .menu {
-    border: 1px solid red;
     float: left;
     width: 25%;
     height: 50px;
@@ -55,11 +53,16 @@ ul.drop_down_menu::after {
 .depth{
     margin-top: 40px;
     width: 100%;
-    border: 1px solid red;
     display: none;
 }
 .depth li {
     line-height: 3em;
+}
+.depth li:hover {
+    background-color: darkseagreen;
+}
+.depth li:hover a {
+    color: #fff;
 }
 .depth li a{
     display: block;
