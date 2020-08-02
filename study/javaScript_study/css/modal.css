@@ -27,13 +27,9 @@ button {
     height: 100%;
     position: absolute;
 }
-@keyframes ani{
-    from{
-        transition: all 3s;
-    }
-    to{
-        transition: all;
-    }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 .modal_content{
     background-color: #fff;
@@ -43,11 +39,15 @@ button {
     border-radius: 10px;
     width: 20%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    animation: ani alternate 3s;
+    animation: fadein alternate 3s;
 }
 h1{
     margin: 0;
 }
+/* @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+} */
 .hidden{
     display: none;
 }
