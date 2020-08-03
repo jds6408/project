@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes ani {
+            50% {
+                left: 0px;
+                top: 0px;
+                opacity: 1;
+            }
+
+            70% {
+                left: 600px;
+                top: 600px;
+                opacity: 0;
+                border-radius: 0;
+                color: #333;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+                opacity: 1;
+            }
+        }
+
+        .wrap {
+            width: 1000px;
+            height: 1000px;
+            position: relative;
+            background-color: #eee;
+            margin: 0 auto;
+        }
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: darkseagreen;
+            border-radius: 50%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 1;
+            text-align: center;
+            line-height: 500px;
+            color: #fff;
+            font-size: 2.5em;
+        }
+        .wrap:hover .box{
+            animation: ani ease-in-out 3s;
+        }
+    </style>
+    <script defer src="js/animation.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">애니메이션</div>
+    </div>
+</body>
+
+</html>
